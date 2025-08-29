@@ -22,9 +22,11 @@ author: Nuno Pedrosa
 navbar-links:
   Home: "https://nazpe.github.io/"
   About Me: "aboutme"
+  Publication: 
+  Projects: 
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Resume: "https://beautifuljekyll.com"
+    - Inspiration: "https://www.markdowntutorial.com/"
 
 ################
 # --- Logo --- #
