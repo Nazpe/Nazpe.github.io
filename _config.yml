@@ -21,9 +21,8 @@ author: Nuno Pedrosa
 
 navbar-links:
   Home: "https://nazpe.github.io/"
-  About Me: "aboutme"
-  Publication: 
-  Projects: 
+  Publication: "aboutme"
+  Projects: "aboutme"
   Resources:
     - Resume: "https://beautifuljekyll.com"
     - Inspiration: "https://www.markdowntutorial.com/"
