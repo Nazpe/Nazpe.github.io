@@ -24,7 +24,7 @@ navbar-links:
   Publication: "aboutme"
   Projects: "aboutme"
   Blog: "aboutme"
-  :):
+  More:
     - Resume: "https://beautifuljekyll.com"
     - Inspiration: "https://www.markdowntutorial.com/"
 
