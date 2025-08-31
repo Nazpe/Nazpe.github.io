@@ -23,7 +23,8 @@ navbar-links:
   Home: "https://nazpe.github.io/"
   Publication: "aboutme"
   Projects: "aboutme"
-  Resources:
+  Blog: "aboutme"
+  :):
     - Resume: "https://beautifuljekyll.com"
     - Inspiration: "https://www.markdowntutorial.com/"
 
