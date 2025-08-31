@@ -25,8 +25,8 @@ navbar-links:
   Projects: "aboutme"
   Blog: "aboutme"
   More:
-    - Resume: "https://beautifuljekyll.com"
-    - Inspiration: "https://www.markdowntutorial.com/"
+    - Surprise 1: "https://beautifuljekyll.com"
+    - Surprise 2: "https://www.markdowntutorial.com/"
 
 ################
 # --- Logo --- #
