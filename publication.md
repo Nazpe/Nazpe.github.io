@@ -10,6 +10,9 @@ mathjax: true
 author: Nuno Pedrosa
 ---
 
+{: .box-success}
+I wrote and presented an article based on this work to the CIARP 2023 conference (26th Iberoamerican Congress on Pattern Recognition). [The paper can be found in the proceedings of the conference, here.](https://link.springer.com/chapter/10.1007/978-3-031-49249-5_3)
+
 My name is Inigo Montoya. I have the following qualities:
 
 - I rock a great mustache
