@@ -27,16 +27,23 @@ The data under analysis contains information on 15355 admissions in the ICU diag
 
 <img width="627" height="426" alt="image" src="https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d" />{: .mx-auto.d-block :}
 
+![Benjamin Bannekat](https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d){: .mx-auto.d-block :}
+
 **Fig. 1.** Data Pre-Processing Pipeline, in transformation, data was transformed with the Yeo-Johnson family of transformations.
 
 #### Predictive Models  
 
 Twelve different models were created, 2 global models, denoted by M24-48PS and OSM24-48PS and 10 localized models, the M24-48PSC family and the OSM24-48PSC family. In the names of the models, M24-48PS, stands for mortality given the 24-48h patient status, the OS, in the beginning, for oversampled data and the C, in the end, for clustered.
 
-<img width="675" height="299" alt="image" src="https://github.com/user-attachments/assets/9c7ba545-d6ba-4487-8d76-56a6e6545ff9" />{: .mx-auto.d-block :}
+<img width="654.5" height="294.5" alt="image" src="https://github.com/user-attachments/assets/b15383f8-a1e9-4859-992d-199482087928" />{: .mx-auto.d-block :}
 
 **Fig. 2.** Pipeline to obtain the models. Blue squares are in common for all models, green squares are just for the OS model and orange squares are just for C models.
 
+Important aspects of the pipeline include:
+Use of Logistic Regression and Recursive Feature Elimination (RFE) to choose the most important features for the final models.
+Oversampling via ADASYN to deal with unbalanced data.
+Hierarchical clustering dendrogram analysis was used to separate the data into populations and optimal separation indicated 5 clusters.
+<img width="3949" height="380" alt="image" src="https://github.com/user-attachments/assets/4a1a1d55-56bc-4a38-92ce-a03d4cab8ecf" />
 
 
 
