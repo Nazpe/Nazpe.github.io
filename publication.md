@@ -41,7 +41,6 @@ Important aspects of the pipeline include:
 Use of Logistic Regression and Recursive Feature Elimination (RFE) to choose the most important features for the final models.
 Oversampling via ADASYN to deal with unbalanced data.
 Hierarchical clustering dendrogram analysis was used to separate the data into populations and optimal separation indicated 5 clusters.
-<img width="3949" height="380" alt="image" src="https://github.com/user-attachments/assets/4a1a1d55-56bc-4a38-92ce-a03d4cab8ecf" />
 
 
 
