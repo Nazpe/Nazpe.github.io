@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mortality Prediction in Intensive Care Unit Patients with Pneumonia
+title: Mortality Prediction in ICU Patients with Pneumonia
 subtitle: A small overview of what I discovered
 gh-repo: nazpe/Thesis
 gh-badge: [star, fork, follow]
