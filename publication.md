@@ -27,11 +27,14 @@ The data under analysis contains information on 15355 admissions in the ICU diag
 
 <img width="627" height="426" alt="image" src="https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d" />{: .mx-auto.d-block :}
 
-Fig. 1. Data Pre-Processing Pipeline, in transformation, data was transformed with the Yeo-Johnson family of transformations.
+**Fig. 1.** Data Pre-Processing Pipeline, in transformation, data was transformed with the Yeo-Johnson family of transformations.
 
 #### Predictive Models  
 
 Twelve different models were created, 2 global models, denoted by M24-48PS and OSM24-48PS and 10 localized models, the M24-48PSC family and the OSM24-48PSC family. In the names of the models, M24-48PS, stands for mortality given the 24-48h patient status, the OS, in the beginning, for oversampled data and the C, in the end, for clustered.
+
+<img width="655" height="295" alt="image" src="https://github.com/user-attachments/assets/9c7ba545-d6ba-4487-8d76-56a6e6545ff9" />
+
 
 
 My name is Inigo Montoya. I have the following qualities:
