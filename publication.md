@@ -1,7 +1,13 @@
 ---
-layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+layout: post
+title: Mortality Prediction in Intensive Care Unit Patients with Pneumonia
+subtitle: A small overview of what I discovered
+gh-repo: nazpe/Thesis
+gh-badge: [star, fork, follow]
+tags: [test]
+comments: true
+mathjax: true
+author: Nuno Pedrosa
 ---
 
 My name is Inigo Montoya. I have the following qualities:
