@@ -25,9 +25,7 @@ The data under analysis contains information on 15355 admissions in the ICU diag
 
 #### Data Pre-Processing
 
-<img width="627" height="426" alt="image" src="https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d" />{: .mx-auto.d-block :}
-
-![Benjamin Bannekat](https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d){: .mx-auto.d-block :}
+![Data Pre-Processing](https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d){: .mx-auto.d-block :}
 
 **Fig. 1.** Data Pre-Processing Pipeline, in transformation, data was transformed with the Yeo-Johnson family of transformations.
 
@@ -35,7 +33,7 @@ The data under analysis contains information on 15355 admissions in the ICU diag
 
 Twelve different models were created, 2 global models, denoted by M24-48PS and OSM24-48PS and 10 localized models, the M24-48PSC family and the OSM24-48PSC family. In the names of the models, M24-48PS, stands for mortality given the 24-48h patient status, the OS, in the beginning, for oversampled data and the C, in the end, for clustered.
 
-<img width="654.5" height="294.5" alt="image" src="https://github.com/user-attachments/assets/b15383f8-a1e9-4859-992d-199482087928" />{: .mx-auto.d-block :}
+![Predictive Models](https://github.com/user-attachments/assets/b15383f8-a1e9-4859-992d-199482087928){: .mx-auto.d-block :}
 
 **Fig. 2.** Pipeline to obtain the models. Blue squares are in common for all models, green squares are just for the OS model and orange squares are just for C models.
 
