@@ -25,7 +25,7 @@ The data under analysis contains information on 15355 admissions in the ICU diag
 
 #### Data Pre-Processing
 
-<img width="1672" height="1134" alt="image" src="https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d" />{: .mx-auto.d-block :}
+<src="https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d" />{: .mx-auto.d-block :}
 
 
 
