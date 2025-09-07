@@ -33,7 +33,7 @@ The data under analysis contains information on 15355 admissions in the ICU diag
 
 Twelve different models were created, 2 global models, denoted by M24-48PS and OSM24-48PS and 10 localized models, the M24-48PSC family and the OSM24-48PSC family. In the names of the models, M24-48PS, stands for mortality given the 24-48h patient status, the OS, in the beginning, for oversampled data and the C, in the end, for clustered.
 
-![Predictive Models](https://github.com/Nazpe/Nazpe.github.io/blob/master/assets/img/Predictive Models Updated.PNG){: .mx-auto.d-block :}
+![Predictive Models](https://Nazpe.github.io/assets/img/Predictive Models Updated.PNG){: .mx-auto.d-block :}
 
 **Fig. 2.** Pipeline to obtain the models. Blue squares are in common for all models, green squares are just for the OS model and orange squares are just for C models.
 
