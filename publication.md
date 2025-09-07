@@ -6,7 +6,7 @@ gh-repo: nazpe/Thesis
 gh-badge: [star, follow]
 tags: [LR]
 comments: true
-mathjax: true
+mathjax: false
 author: Nuno Pedrosa
 ---
 
