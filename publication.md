@@ -10,7 +10,7 @@ mathjax: true
 author: Nuno Pedrosa
 ---
 
-[!NOTE]
+{: .box-note}
 This section is a simple summary of my academic work in Mortality prediction via logistic regression in ICU patients with pneumonia.
 
 {: .box-success}
