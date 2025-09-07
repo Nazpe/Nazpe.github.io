@@ -52,7 +52,7 @@ To compare global and localized results, two systems were created:
 * **Membership Separation (M)**: The observations of the test data are assigned to the cluster with a smaller distance to the cluster centroid.
 * **Via Weights (W)**: All test data is predicted using all models, and the final probability for a given observation is the weighted average over all model predictions depending on cluster centroids distances.
 
-![Predictive Models](https://github.com/user-attachments/assets/fde2f37a-9e3f-41fe-bd71-f6dc4c0bab14){: .mx-auto.d-block :}
+![Predictive Models](https://github.com/user-attachments/assets/6e857eaf-cf99-4dd5-85ce-bb04b849c1bc){: .mx-auto.d-block :}
 
 **Fig. 4.** Balanced accuracy of the models.
 
