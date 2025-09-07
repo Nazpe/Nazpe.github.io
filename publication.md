@@ -42,15 +42,27 @@ Important aspects of the pipeline include:
 * Oversampling via **ADASYN** to deal with unbalanced data.
 * **Hierarchical clustering** dendrogram analysis was used to separate the data into populations and optimal separation indicated 5 clusters.
 
+## Results and Discussion
 
+![Predictive Models](https://github.com/user-attachments/assets/001a7ede-3cbe-4419-b3fa-e606a7c4d4f2){: .mx-auto.d-block :}
 
-My name is Inigo Montoya. I have the following qualities:
+**Fig. 3.** Models Summary, with the features used in each model with their coefficient value, number of train observations used and the mortality ratios.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+To compare global and localized results, two systems were created:
+* **Membership Separation (M)**: The observations of the test data are assigned to the cluster with a smaller distance to the cluster centroid.
+* **Via Weights (W)**: All test data is predicted using all models, and the final probability for a given observation is the weighted average over all model predictions depending on cluster centroids distances.
 
-What else do you need?
+![Predictive Models](https://github.com/user-attachments/assets/40fefd5a-72f8-41ec-8147-d4cd585b2af8){: .mx-auto.d-block :}
 
-### My story
+**Fig. 4.** Balanced accuracy of the models.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+The localized and global approach's reveal approximately the same performance, probably because there isn’t a big enough heterogeneity in our data to lead to better predictions in the localized models. Comparing OS models to the not OS models, the OS models perform better in cross validation but worse in test.
+
+#### Localized Models Proof of Concept
+
+As a proof of concept of the utility of localized models, we took the centroids of the clusters and extracted the closest observations to increase the separability of the populations. A **new global model and new localized models** were constructed and got **0.60 ± 0.13, 0.67 ± 0.20** in cross validation and **0.76, 0.77** in test, respectively, in balanced accuracy. The results may indicate that localized models would be useful in more separable data but, aren’t enough for a definitive answer.
+
+## Conclusions
+
+It was possible to obtain mortality predictions of patients with pneumonia in the 4 different approaches, standing out M24-48PS and M24-48PSC W. There was no evident advantage of the localized models, due to the low separability of the data, however, the proof of concept showed that it as potential in more separable data.
+Future work will explore different approaches aiming to increase the performance of the predictive models, including data pre-processing as well as clustering analysis and to consider other clinical variables.
