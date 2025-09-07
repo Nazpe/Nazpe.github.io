@@ -37,8 +37,7 @@ Twelve different models were created, 2 global models, denoted by M24-48PS and O
 
 **Fig. 2.** Pipeline to obtain the models. Blue squares are in common for all models, green squares are just for the OS model and orange squares are just for C models.
 
-Important aspects of the pipeline include:
-* Use of **Logistic Regression** and Recursive Feature Elimination (RFE) to choose the most important features for the final models.
+Important aspects of the pipeline include: * Use of **Logistic Regression** and Recursive Feature Elimination (RFE) to choose the most important features for the final models.
 * Oversampling via **ADASYN** to deal with unbalanced data.
 * **Hierarchical clustering** dendrogram analysis was used to separate the data into populations and optimal separation indicated 5 clusters.
 
@@ -48,8 +47,7 @@ Important aspects of the pipeline include:
 
 **Fig. 3.** Models Summary, with the features used in each model with their coefficient value, number of train observations used and the mortality ratios.
 
-To compare global and localized results, two systems were created:
-* **Membership Separation (M)**: The observations of the test data are assigned to the cluster with a smaller distance to the cluster centroid.
+To compare global and localized results, two systems were created: * **Membership Separation (M)**: The observations of the test data are assigned to the cluster with a smaller distance to the cluster centroid.
 * **Via Weights (W)**: All test data is predicted using all models, and the final probability for a given observation is the weighted average over all model predictions depending on cluster centroids distances.
 
 ![Predictive Models](https://github.com/user-attachments/assets/f37f2668-0b4c-4e00-8ef4-b21240d5e832){: .mx-auto.d-block :}
