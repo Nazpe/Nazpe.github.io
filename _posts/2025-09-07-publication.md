@@ -55,6 +55,8 @@ Important aspects of the pipeline include:
 
 **Fig. 3.** Models Summary, with the features used in each model with their coefficient value, number of train observations used and the mortality ratios.
 
+Some relevant aspects that can be highlighted from Fig. 3. are the great variety of different mortality ratios in the different clusters, evidencing that different populations in the data have different probabilities of mortality. The great variation in the number of observations for each population. And the fact that each cluster had an optimal pull of different features shows that important factors to predict mortality vary from population to population.
+
 To compare global and localized results, two systems were created: 
 * **Membership Separation (M)**: The observations of the test data are assigned to the cluster with a smaller distance to the cluster centroid.
 * **Via Weights (W)**: All test data is predicted using all models, and the final probability for a given observation is the weighted average over all model predictions depending on cluster centroids distances.
