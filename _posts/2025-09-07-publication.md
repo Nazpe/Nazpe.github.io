@@ -18,7 +18,11 @@ I wrote and presented an article based on this work to the CIARP 2023 conference
 
 ## Introduction
 
-Pneumonia is a very relevant problem with repercussions for society. In 2019, it resulted in 2.5 million deaths worldwide as well as causing a significant loss of quality of life and financial costs. Therefore, the prediction of pneumonia-related mortality is critical, and this work explores machine learning to address it. Literature has already made based on e.g. Random Forests and XGBoost. This work focuses on the development of interpretable models, that enable drawing meaningful conclusions from the data and gaining (clinical) insights into the underlying process. This work further explores localized prediction.
+Pneumonia is a very relevant problem with repercussions for society. In 2019, it resulted in 2.5 million deaths worldwide as well as causing a significant loss of quality of life and financial costs. Therefore, the prediction of pneumonia-related mortality is critical, and this work explores machine learning to address it. Literature has already made based on e.g. Random Forests and XGBoost. 
+
+Although the use of complex models can result in good predictions, the use of simpler and interpretable models, such as logistic regression, enables to better understand the rules and correlations of variables in a model. Another important aspect that is often overlooked is the significant variation that exists within the populations from which the data originates. Different subsets of the population possess unique characteristics that can have varying impacts on mortality predictions. To address this, one approach is to partition the data into more homogeneous populations and develop separate models for each population group.
+
+Accordingly, this work focuses on the development of interpretable models, that enable drawing meaningful conclusions from the data and gaining (clinical) insights into the underlying process. This work further explores localized prediction.
 
 ## Materials
 
