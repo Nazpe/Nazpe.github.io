@@ -77,9 +77,7 @@ The localized and global approach's reveal approximately the same performance, p
  as before.
 
  For comparison reasons, a global model with new data with greater
- separability was created (NEW GLOBAL). The results are present in Table
- 5, with a new silhouette score between all clusters of 0.2, evidencing a larger
- separability than the one obtained before (0.11).
+ separability was created (NEW GLOBAL). A new silhouette score between all clusters of 0.2, evidencing a larger separability than the one obtained before (0.11).
 
 The **new global model and the weighted average of the new localized models** got **0.60 ± 0.13, 0.67 ± 0.20** in cross validation and **0.76, 0.77** in test, respectively, in balanced accuracy. The results may indicate that localized models would be useful in more separable data, but aren’t enough for a definitive answer.
 
