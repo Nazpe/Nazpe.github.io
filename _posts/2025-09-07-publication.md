@@ -69,7 +69,19 @@ The localized and global approach's reveal approximately the same performance, p
 
 #### Localized Models Proof of Concept
 
-As a proof of concept of the utility of localized models, we took the centroids of the clusters and extracted the closest observations to increase the separability of the populations. A **new global model and new localized models** were constructed and got **0.60 ± 0.13, 0.67 ± 0.20** in cross validation and **0.76, 0.77** in test, respectively, in balanced accuracy. The results may indicate that localized models would be useful in more separable data but, aren’t enough for a definitive answer.
+ To show that in a dataset with greater separability, localized models can give
+ better performances, the centroids of the previously obtained clusters were taken
+ and the 75 closest observations for train and the 50 closest test observations were
+ extracted. Three new models were created, NEW 3, NEW 4 and NEW 5. Cluster
+ 1 and 2 models, because of the already low amount of data present, were used
+ as before.
+
+ For comparison reasons, a global model with new data with greater
+ separability was created (NEW GLOBAL). The results are present in Table
+ 5, with a new silhouette score between all clusters of 0.2, evidencing a larger
+ separability than the one obtained before (0.11).
+
+The **new global model and the weighted average of the new localized models** got **0.60 ± 0.13, 0.67 ± 0.20** in cross validation and **0.76, 0.77** in test, respectively, in balanced accuracy. The results may indicate that localized models would be useful in more separable data, but aren’t enough for a definitive answer.
 
 ## Conclusions
 
