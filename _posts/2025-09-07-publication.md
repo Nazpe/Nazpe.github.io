@@ -8,6 +8,7 @@ tags: [LR]
 comments: true
 mathjax: true
 author: Nuno Pedrosa
+thumbnail-img: "https://github.com/user-attachments/assets/3e8a4ec3-b253-45bd-9706-c535283e9854"
 ---
 
 {: .box-note}
