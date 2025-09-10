@@ -22,3 +22,20 @@ vertisements, fraud detection, generative AI chatbots like ChatGPT and many othe
 In the near future, more companies will use AI to address specific problems. By 2025, according to Gartner, 50% of businesses already have platforms for using AI, when in 2020 just 10% of companies used it. But this is just the beginning, because it is expected that the ways we work, live, and interact with others will change even more. In one side, it is anticipated that this new revolution will enhance and improve our lives and societies. However, in the other, it could result in significant changes to our way of life and society standards. 
 
 The time  to comprehend these technologies influence and anticipate their unfavourable implications is shrinking. Therefore, it is very important to take ethical principles into account and do not let the evolution of technology continue to outpace its proper regulation[5][9][8][17]
+
+# 2 THE FUTURE OF AI
+
+At leading firms, there is currently a transition from artificial intelligence being a additional feature to a key feature, because AI is becoming more integral to company operations and strategy.  AI will reach and expand in a lot of areas of interest, bringing a lot of innovation and progress into those areas, some examples of what is expected to happen are the following:
+
+ Medicine andHealthcare: AI can help automate repetitive
+ tasks to save time, with evidence-based decisions by iden
+tifying risk factors, it can anticipate outcomes even using
+ patient-specific algorithms. It is expected that it will help
+ to prevent around 86 percent of errors in the healthcare
+ sector, while, at the same time, reducing costs. It will also
+ permit a better understanding of the different elements (like
+ birthplace, diet, pollution, etc.) that affect a person’s health,
+ even permitting to discover when a person is most likely to
+ develop a chronic illness and offer pre-emptive treatment to
+ stop its advancement. This gives insight that permits to alter
+ undesirable outcomes into a better clinical result[8][6].
