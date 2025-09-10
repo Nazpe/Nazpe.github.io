@@ -27,15 +27,17 @@ The time  to comprehend these technologies influence and anticipate their unfavo
 
 At leading firms, there is currently a transition from artificial intelligence being a additional feature to a key feature, because AI is becoming more integral to company operations and strategy.  AI will reach and expand in a lot of areas of interest, bringing a lot of innovation and progress into those areas, some examples of what is expected to happen are the following:
 
-* Medicine andHealthcare: AI can help automate repetitive
- tasks to save time, with evidence-based decisions by iden
-tifying risk factors, it can anticipate outcomes even using
- patient-specific algorithms. It is expected that it will help
- to prevent around 86 percent of errors in the healthcare
- sector, while, at the same time, reducing costs. It will also
- permit a better understanding of the different elements (like
- birthplace, diet, pollution, etc.) that affect a person’s health,
- even permitting to discover when a person is most likely to
- develop a chronic illness and offer pre-emptive treatment to
- stop its advancement. This gives insight that permits to alter
- undesirable outcomes into a better clinical result[8][6].
+* **Medicine and Healthcare:** AI can help automate repetitive tasks to save time, with evidence-based decisions by identifying risk factors, it can anticipate outcomes even using patient-specific algorithms. It is expected that it will help to prevent around 86 percent of errors in the healthcare sector, while, at the same time, reducing costs. It will also permit a better understanding of the different elements (like birthplace, diet, pollution, etc.) that affect a person’s health, even permitting to discover when a person is most likely to develop a chronic illness and offer pre-emptive treatment to stop its advancement. This gives insight that permits to alter undesirable outcomes into a better clinical result[8][6].
+
+* **Retail:** Retailers can save over $340 billion by 2022 if they
+ implement AI throughout all of their business operations,
+ according to a Capgemini study. And, by the end of 2022, Ac
+centure estimates that investments in AI will increase retail
+ revenues by 38%, when compared to the end of 2021. Ama
+zon is already trying to determine the safety of operations
+ for delivering items with drones. This can be a reality in the
+ next ten years. Also, this will lead to a more autonomous
+ and individualized experience, with dressing rooms with
+ screens, virtual racks customized according to data-defined
+ personas and more personalization based on past behaviours
+ and trends[6].
