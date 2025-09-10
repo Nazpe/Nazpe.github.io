@@ -4,6 +4,8 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
+[The future of AI](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29)
+
 My name is Inigo Montoya. I have the following qualities:
 
 - I rock a great mustache
