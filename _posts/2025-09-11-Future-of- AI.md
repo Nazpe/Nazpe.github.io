@@ -27,7 +27,7 @@ The time  to comprehend these technologies influence and anticipate their unfavo
 
 At leading firms, there is currently a transition from artificial intelligence being a additional feature to a key feature, because AI is becoming more integral to company operations and strategy.  AI will reach and expand in a lot of areas of interest, bringing a lot of innovation and progress into those areas, some examples of what is expected to happen are the following:
 
- Medicine andHealthcare: AI can help automate repetitive
+* Medicine andHealthcare: AI can help automate repetitive
  tasks to save time, with evidence-based decisions by iden
 tifying risk factors, it can anticipate outcomes even using
  patient-specific algorithms. It is expected that it will help
