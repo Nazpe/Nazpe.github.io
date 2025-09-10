@@ -84,4 +84,5 @@ The **new global model and the weighted average of the new localized models** go
 ## Conclusions
 
 It was possible to obtain mortality predictions of patients with pneumonia in the 4 different approaches, standing out M24-48PS and M24-48PSC W. There was no evident advantage of the localized models, due to the low separability of the data, however, the proof of concept showed that it as potential in more separable data.
-Future work will explore different approaches aiming to increase the performance of the predictive models, including data pre-processing as well as clustering analysis and to consider other clinical variables.
+
+Future work will explore different approaches aiming to increase the performance of the predictive models, including optimizing data pre-processing parameters, as well as clustering analysis, and considering other clinical variables (or other codifications of the existing ones). It will also experiment with more complex models that permit better performances. Lastly, it would be important to continue this work together with professionals in the field of health, who can provide insights on how to tune the models according to their needs. Overall, it is very important that this research for optimizing the prediction of mortality in pneumonia is continued, in an effort to improve health care.
