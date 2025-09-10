@@ -63,7 +63,7 @@ To compare global and localized results, two systems were created:
 
 ![Predictive Models](https://github.com/user-attachments/assets/f37f2668-0b4c-4e00-8ef4-b21240d5e832){: .mx-auto.d-block :}
 
-**Fig. 4.** Balanced accuracy of the models.
+**Fig. 4.** Balanced accuracy of the models. Other metrics were also calculated (Accuracy, Precision, Recall, F1 Score, AUROC, and the optimal separation threshold), but they were not analyzed here for the sake of simplicity in this overview.
 
 The localized and global approach's reveal approximately the same performance, probably because there isn’t a big enough heterogeneity in our data to lead to better predictions in the localized models. Comparing OS models to the not OS models, the OS models perform better in cross validation but worse in test.
 
