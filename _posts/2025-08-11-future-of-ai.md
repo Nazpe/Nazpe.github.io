@@ -109,8 +109,8 @@ g/data-science/artificial-intelligence-future/.
 Management Review, 61, 4, (July 2019), 5–14. doi: 10.1177/0008125619864925.
  
 [8] J. Matthew Helm, Andrew M. Swiergosz, Heather S. Haeberle, Jaret M. Karnuta,
-JonathanL.Schaffer,ViktorE.Krebs,AndrewI.Spitzer,andPremN.Ramkumar.
-2020. Machine Learning and Artificial Intelligence: Definitions, Applications,
+JonathanL.Schaffer, ViktorE.Krebs, AndrewI.Spitzer and PremN.Ramkumar.
+2020 Machine Learning and Artificial Intelligence: Definitions, Applications,
 and Future Directions. Current Reviews in Musculoskeletal Medicine, 13, 1, 69–76.
 doi: 10.1007/s12178-020-09600-8.
  
@@ -124,7 +124,7 @@ doi: 10.1007/s12178-020-09600-8.
  
 [13] Cornelius Puschmann and Jean Burgess. 2014. Metaphors of big data. International Journal of Communication, 8, 1, 1690–1709.
 
-[14] TheEconomist.2016.Chinainventsthedigitaltotalitarianstate|TheEconomist.
+[14] The Economist. 2016. China invents the digital totalitarian state. TheEconomist.
 (2016). Retrieved July 25, 2022 from https://www.economist.com/briefing/2016/12/17/china-invents-the-digital-totalitarian-state.
  
 [15] The New York Times. 2019. San Francisco Bans Facial Recognition Technology- The New York Times. (2019). Retrieved July 25, 2022 from https://www.nytimes.com/2019/05/14/us/facial-recognition-ban-san-francisco.html.
