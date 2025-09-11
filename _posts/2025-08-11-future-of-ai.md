@@ -9,7 +9,7 @@ author: Nuno Pedrosa
 ---
 
 {: .box-note}
-This is a reflection on the Future of Artificial Intelligence and Associated Ethical Issues, supported by the literature. The references are present at the end.
+This is a reflection on the future of artificial intelligence and associated ethical issues, supported by the literature. The references are present at the end.
 
 ## Abstract
 
