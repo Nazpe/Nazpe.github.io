@@ -104,7 +104,7 @@ JonathanL.Schaffer,ViktorE.Krebs,AndrewI.Spitzer,andPremN.Ramkumar.
 and Future Directions. Current Reviews in Musculoskeletal Medicine, 13, 1, 69–76.
 doi: 10.1007/s12178-020-09600-8.
  
-[9]  IBM. 2022. What is Artificial Intelligence (AI)? | IBM. (2022). Retrieved July 25, 2022 from https://www.ibm.com/cloud/learn/what-is-artificial-intelligence.
+[9] IBM. 2022. What is Artificial Intelligence (AI)? | IBM. (2022). Retrieved July 25, 2022 from https://www.ibm.com/cloud/learn/what-is-artificial-intelligence.
 
 [10] IHS Markit. 2022. News Release | IHS Markit Online Newsroom. (2022). Retrieved July 25, 2022 from https://news.ihsmarkit.com/prviewer/release_only/slug/technologyglobal-business-value-artificial-intelligence-banking-reach300-billion-203.
 
@@ -117,7 +117,7 @@ doi: 10.1007/s12178-020-09600-8.
 [14] TheEconomist.2016.Chinainventsthedigitaltotalitarianstate|TheEconomist.
 (2016). Retrieved July 25, 2022 from https://www.economist.com/briefing/2016/12/17/china-invents-the-digital-totalitarian-state.
  
-[15]The New York Times. 2019. San Francisco Bans Facial Recognition Technology- The New York Times. (2019). Retrieved July 25, 2022 from https://www.nytimes.com/2019/05/14/us/facial-recognition-ban-san-francisco.html.
+[15] The New York Times. 2019. San Francisco Bans Facial Recognition Technology- The New York Times. (2019). Retrieved July 25, 2022 from https://www.nytimes.com/2019/05/14/us/facial-recognition-ban-san-francisco.html.
  
 [16] Simen Thys, Wiebe Van Ranst, and Toon Goedeme. 2019. Fooling automated surveillance cameras: Adversarial patches to attack person detection. IEEE
 Computer Society Conference on Computer Vision and Pattern Recognition Workshops, 2019-June, (June 2019), 49–55. isbn: 9781728125060. arXiv: 1904.08653.
