@@ -2,6 +2,9 @@
 layout: post
 title: Future of Artificial Intelligence and Associated Ethical Issues
 subtitle: A Reflection of what is coming
+cover-img: /assets/img/path.jpg
+thumbnail-img: "https://github.com/user-attachments/assets/670c3608-54b5-44b4-9557-84f3b2e4f7ab"
+share-img: /assets/img/path.jpg
 comments: true
 mathjax: true
 tags: [text]
