@@ -37,6 +37,8 @@ The data under analysis contains information on 15355 admissions in the ICU diag
 
 #### Data Pre-Processing
 
+Given the extracted data, the data is pre-processed to better prepare it to feed the models.
+
 ![Data Pre-Processing](https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d){: .mx-auto.d-block :}
 
 **Fig. 2.** Data Pre-Processing Pipeline, in transformation, data was transformed with the Yeo-Johnson family of transformations, in selection, a correlation dendrogram analysis was performed based on dissimilarity to eliminate features.
