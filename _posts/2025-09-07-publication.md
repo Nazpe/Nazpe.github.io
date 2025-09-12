@@ -28,13 +28,18 @@ Accordingly, this work focuses on the development of interpretable models, that 
 
 The data under analysis contains information on 15355 admissions in the ICU diagnosed with pneumonia, in Portugal, from February 02, 2009 to August 18, 2020. This analysis extracted information in the 24-48h time window after admission of the patients into ICU. After pre-processing, the sample consisted of a set of 64 features from 2729 admissions.
 
+![Extraction Pipeline](https://github.com/user-attachments/assets/b06a0bc8-9ccc-43b0-826d-abc700cffa76){: .mx-auto.d-block :}
+
+**Fig. 1.** Microsoft SQL Server Database Pipeline with SQL Based procedures, Data Extraction and Data Preparation 
+
+
 ## Methods
 
 #### Data Pre-Processing
 
 ![Data Pre-Processing](https://github.com/user-attachments/assets/4e9057a1-e620-478e-a7a6-a9b0ebd0f06d){: .mx-auto.d-block :}
 
-**Fig. 1.** Data Pre-Processing Pipeline, in transformation, data was transformed with the Yeo-Johnson family of transformations, in selection, a correlation dendrogram analysis was performed based on dissimilarity to eliminate features.
+**Fig. 2.** Data Pre-Processing Pipeline, in transformation, data was transformed with the Yeo-Johnson family of transformations, in selection, a correlation dendrogram analysis was performed based on dissimilarity to eliminate features.
 
 #### Predictive Models  
 
@@ -42,7 +47,7 @@ Twelve different models were created, 2 global models, denoted by M24-48PS and O
 
 ![Predictive Models](https://github.com/user-attachments/assets/76b898f7-da9c-489a-bebb-0d9d910a7355){: .mx-auto.d-block :}
 
-**Fig. 2.** Pipeline to obtain the models. Blue squares are in common for all models, green squares are just for the OS model and orange squares are just for C models.
+**Fig. 3.** Pipeline to obtain the models. Blue squares are in common for all models, green squares are just for the OS model and orange squares are just for C models.
 
 Important aspects of the pipeline include: 
 * Use of **Logistic Regression** and Recursive Feature Elimination (RFE) to choose the most important features for the final models.
@@ -53,9 +58,9 @@ Important aspects of the pipeline include:
 
 ![Predictive Models](https://github.com/user-attachments/assets/001a7ede-3cbe-4419-b3fa-e606a7c4d4f2){: .mx-auto.d-block :}
 
-**Fig. 3.** Models Summary, with the features used in each model with their coefficient value, number of train observations used and the mortality ratios.
+**Fig. 4.** Models Summary, with the features used in each model with their coefficient value, number of train observations used and the mortality ratios.
 
-Some relevant aspects that can be highlighted from Fig. 3. are the great variety of different mortality ratios in the different clusters, evidencing that different populations in the data have different probabilities of mortality. The great variation in the number of observations for each population. And the fact that each cluster had an optimal pull of different features shows that important factors to predict mortality vary from population to population.
+Some relevant aspects that can be highlighted from Fig. 4. are the great variety of different mortality ratios in the different clusters, evidencing that different populations in the data have different probabilities of mortality. The great variation in the number of observations for each population. And the fact that each cluster had an optimal pull of different features shows that important factors to predict mortality vary from population to population.
 
 To compare global and localized results, two systems were created: 
 * **Membership Separation (M)**: The observations of the test data are assigned to the cluster with a smaller distance to the cluster centroid.
@@ -63,7 +68,7 @@ To compare global and localized results, two systems were created:
 
 ![Predictive Models](https://github.com/user-attachments/assets/f37f2668-0b4c-4e00-8ef4-b21240d5e832){: .mx-auto.d-block :}
 
-**Fig. 4.** Balanced accuracy of the models. Other metrics were also calculated (Accuracy, Precision, Recall, F1 Score, AUROC, and the optimal separation threshold), but they were not analyzed here for the sake of simplicity in this overview.
+**Fig. 5.** Balanced accuracy of the models. Other metrics were also calculated (Accuracy, Precision, Recall, F1 Score, AUROC, and the optimal separation threshold), but they were not analyzed here for the sake of simplicity in this overview.
 
 The localized and global approach's reveal approximately the same performance, probably because there isn’t a big enough heterogeneity in our data to lead to better predictions in the localized models. Comparing OS models to the not OS models, the OS models perform better in cross validation but worse in test.
 
