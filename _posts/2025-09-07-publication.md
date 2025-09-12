@@ -28,7 +28,7 @@ Accordingly, this work focuses on the development of interpretable models, that 
 
 The data under analysis contains information on 15355 admissions in the ICU diagnosed with pneumonia, in Portugal, from February 02, 2009 to August 18, 2020. This analysis extracted information in the 24-48h time window after admission of the patients into ICU. After pre-processing, the sample consisted of a set of 64 features from 2729 admissions.
 
-![Extraction Pipeline](https://github.com/user-attachments/assets/1fd2e853-caf6-41be-98f7-6ecf66f4c87a){: .mx-auto.d-block :}
+![Extraction Pipeline](https://github.com/user-attachments/assets/dc0f95cf-8f2d-4567-85d4-68c1ec3e5044){: .mx-auto.d-block :}
 
 **Fig. 1.** Microsoft SQL Server Database Pipeline, with SQL Based procedures, Data Extraction and Data Preparation 
 
