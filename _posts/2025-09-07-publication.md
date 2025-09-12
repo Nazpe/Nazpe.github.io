@@ -47,7 +47,7 @@ Given the extracted data, the data is pre-processed to better prepare it to feed
 
 Twelve different models were created, 2 global models, denoted by M24-48PS and OSM24-48PS and 10 localized models, the M24-48PSC family and the OSM24-48PSC family. In the names of the models, M24-48PS, stands for mortality given the 24-48h patient status, the OS, in the beginning, for oversampled data and the C, in the end, for clustered.
 
-![Predictive Models](https://github.com/user-attachments/assets/76b898f7-da9c-489a-bebb-0d9d910a7355){: .mx-auto.d-block :}
+![Pipeline](https://github.com/user-attachments/assets/76b898f7-da9c-489a-bebb-0d9d910a7355){: .mx-auto.d-block :}
 
 **Fig. 3.** Pipeline to obtain the models. Blue squares are in common for all models, green squares are just for the OS model and orange squares are just for C models.
 
@@ -58,7 +58,7 @@ Important aspects of the pipeline include:
 
 ## Results and Discussion
 
-![Predictive Models](https://github.com/user-attachments/assets/001a7ede-3cbe-4419-b3fa-e606a7c4d4f2){: .mx-auto.d-block :}
+![Predictive Models Coefficient](https://github.com/user-attachments/assets/001a7ede-3cbe-4419-b3fa-e606a7c4d4f2){: .mx-auto.d-block :}
 
 **Fig. 4.** Models Summary, with the features used in each model with their coefficient value, number of train observations used and the mortality ratios.
 
@@ -85,6 +85,8 @@ The localized and global approach's reveal approximately the same performance, p
 
  For comparison reasons, a global model with new data with greater
  separability was created (NEW GLOBAL). A new silhouette score between all clusters of 0.2, evidencing a larger separability than the one obtained before (0.11).
+
+![Dendogram](https://github.com/user-attachments/assets/30f397da-1712-4dca-a47b-5075c141f4b0){: .mx-auto.d-block :}
 
 The **new global model and the weighted average of the new localized models** got **0.60 ± 0.13, 0.67 ± 0.20** in cross validation and **0.76, 0.77** in test, respectively, in balanced accuracy. The results may indicate that localized models would be useful in more separable data, but aren’t enough for a definitive answer.
 
