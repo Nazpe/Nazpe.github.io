@@ -86,7 +86,7 @@ The localized and global approach's reveal approximately the same performance, p
  For comparison reasons, a global model with new data with greater
  separability was created (NEW GLOBAL). A new silhouette score between all clusters of 0.2, evidencing a larger separability than the one obtained before (0.11).
 
-![Dendogram](https://github.com/user-attachments/assets/30f397da-1712-4dca-a47b-5075c141f4b0){: .mx-auto.d-block :}
+![Dendogram](https://github.com/user-attachments/assets/4194ac92-cd1a-4c90-85bd-0e29df79eb22){: .mx-auto.d-block :}
 
 **Fig. 6.** Comparison between the separation of the original data and the more separable data. The figure shows a hierarchical clustering dendrogram using Ward’s variance minimization method and the Euclidean metric, along with a silhouette score graph.
 
