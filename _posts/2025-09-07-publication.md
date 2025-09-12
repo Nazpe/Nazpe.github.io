@@ -88,6 +88,8 @@ The localized and global approach's reveal approximately the same performance, p
 
 ![Dendogram](https://github.com/user-attachments/assets/30f397da-1712-4dca-a47b-5075c141f4b0){: .mx-auto.d-block :}
 
+**Fig. 6.** Comparison between the separation of the original data and the more separable data. The figure shows a hierarchical clustering dendrogram using Ward’s variance minimization method and the Euclidean metric, along with a silhouette score graph.
+
 The **new global model and the weighted average of the new localized models** got **0.60 ± 0.13, 0.67 ± 0.20** in cross validation and **0.76, 0.77** in test, respectively, in balanced accuracy. The results may indicate that localized models would be useful in more separable data, but aren’t enough for a definitive answer.
 
 ## Conclusions
