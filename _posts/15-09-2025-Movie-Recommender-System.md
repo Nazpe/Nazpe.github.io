@@ -9,8 +9,7 @@ tags: [Project]
 author: Nuno Pedrosa
 ---
 
-![Pipelines]("https://github.com/user-attachments/assets/726f4238-a7d5-467a-a404-ea240e781086"
-){: .mx-auto.d-block :}
+![Pipelines]("https://github.com/user-attachments/assets/726f4238-a7d5-467a-a404-ea240e781086"){: .mx-auto.d-block :}
 
 
 
