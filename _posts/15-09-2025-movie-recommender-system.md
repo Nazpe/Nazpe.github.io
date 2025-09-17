@@ -56,9 +56,11 @@ Movies_df = spark.read.csv("ml-latest-small/movies.csv",header=True)
 Ratings_df = spark.read.csv("ml-latest-small/ratings.csv",header=True)
 ```
 
+To understand the distribution of our data, here are some small samples of the Ratings_df and the Movies_df.
+
 ![Extraction Pipeline](https://github.com/user-attachments/assets/c8205bff-e2e2-48ec-aafe-87b1efaebfe2){: .mx-auto.d-block :}
 
-To understand the distribution of our data, here are some small samples.
+
 
 ### Training and Testing Split
 
