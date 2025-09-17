@@ -64,7 +64,7 @@ To understand the distribution of our data, here are some small samples of the R
 
 ### Training and Testing Split
 
-To validate the performance of our recommendation system, the dataset was split into training (90%) and testing (10%) sets. This allows us to train the model on a majority of the data and then evaluate its predictions on unseen data.
+After Pre-Processing the data, to validate the performance of our recommendation system, the dataset was split into training (90%) and testing (10%) sets. This allows us to train the model on a majority of the data and then evaluate its predictions on unseen data.
 
 ```python
 (Train, Test) = Ratings_df.randomSplit([0.9, 0.1], seed = 0)
@@ -105,7 +105,7 @@ Train_user_RDD = Train_user_RDD.map(lambda item: (item[0],item[1]))
 Train_user_RDD = Train_user_RDD.reduceByKey(lambda data_1,data_2:RatingJunction(data_1,data_2))
 ```
 
-The resulting RDDs look something like this, with `None` representing unrated movies/users:
+The resulting RDDs look something like this (one based on users and another based on items), with `None` representing unrated movies/users:
 
 ```
 +---+--------------------+
@@ -160,7 +160,7 @@ def cosine_sim(item):
 similarityRDD=JoinedRDD.map(lambda data: cosine_sim(data))
 ```
 
-To optimize and focus on meaningful relationships, I filtered out similarities below a threshold of 0.3, considering them weak correlations. This significantly reduces computation time later on.
+To optimize and focus on meaningful relationships, I filtered out similarities below a threshold of 0.3, considering them weak correlations. This significantly reduces computation time later on. Then, transformed the RDD into a dictionary of movie similarity.
 
 ### Predicting Scores for Unrated Movies
 
