@@ -56,9 +56,7 @@ Movies_df = spark.read.csv("ml-latest-small/movies.csv",header=True)
 Ratings_df = spark.read.csv("ml-latest-small/ratings.csv",header=True)
 ```
 
-![Extraction Pipeline](https://github.com/user-attachments/assets/4f296a4e-78b7-4f78-b678-da8ccf4444d0){: .mx-auto.d-block :}
-
-![Extraction Pipeline](https://github.com/user-attachments/assets/d710b67c-eb09-4d9c-a06b-5b617c62fcd2){: .mx-auto.d-block :}
+![Extraction Pipeline](https://github.com/user-attachments/assets/c8205bff-e2e2-48ec-aafe-87b1efaebfe2){: .mx-auto.d-block :}
 
 To understand the distribution of our data, here are some small samples.
 
