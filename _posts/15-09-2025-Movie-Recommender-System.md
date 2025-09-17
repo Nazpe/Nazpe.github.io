@@ -15,7 +15,15 @@ author: Nuno Pedrosa
 
 ## Unveiling Movie Preferences: A Deep Dive into Collaborative Filtering with Spark
 
-Have you ever wondered how services like MovieLens magically know what movies you'll love? The secret often lies in a powerful technique called **Collaborative Filtering**. In this post, I'll walk you through a project where I implemented collaborative filtering using Apache Spark to build a movie recommendation system based on the MovieLens dataset.
+Recommender systems are a fundamental component of modern digital platforms, helping users discover relevant content, products, or services by filtering vast amounts of information. From suggesting movies on Netflix to recommending products on Amazon, these systems aim to personalize the user experience and increase engagement. There are three primary approaches to building recommender systems: content-based filtering, collaborative filtering, and latent factor models. Each approach has its unique methodology, strengths, and limitations.
+
+**Content-based filtering** recommends items to a user based on the characteristics of items they have previously liked. It relies heavily on item metadata — such as genre, category, or descriptive keywords — to find similar items. This approach is highly personalized and works well even with a small user base. However, it tends to narrow user choices by repeatedly recommending similar types of items, potentially limiting discovery.
+
+**Collaborative filtering** focuses on user behavior rather than item attributes. It identifies users with similar preferences and suggests items that those users have liked, assuming that users who agreed in the past will likely agree again. This method can uncover surprising or unexpected recommendations by leveraging community behavior, but it struggles with new users or new items — a challenge known as the cold start problem.
+
+**Latent factor models**, such as matrix factorization, use mathematical techniques to discover hidden patterns in user-item interactions. These models reduce the complex interaction matrix into lower-dimensional representations, capturing abstract factors like "taste" or "style" without needing explicit item features. While often more accurate and scalable, latent factor models are less interpretable and also suffer from cold start limitations.
+
+In this post, I'll walk you through a project where I implemented **collaborative filtering** using Apache Spark to build a movie recommendation system based on the MovieLens dataset.
 
 ### The Data Behind the Magic
 
