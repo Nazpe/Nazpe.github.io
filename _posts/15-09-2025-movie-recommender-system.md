@@ -60,7 +60,7 @@ To understand the distribution of our data, here are some small samples of the R
 
 ![Extraction Pipeline](https://github.com/user-attachments/assets/c8205bff-e2e2-48ec-aafe-87b1efaebfe2){: .mx-auto.d-block :}
 
-
+**Fig. 1.** Small print of the 2 dataframes, on the left, the Ratings_df, and on the right, the Movies_df.
 
 ### Training and Testing Split
 
