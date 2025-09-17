@@ -93,7 +93,9 @@ def RatingJunction(a,b):
     c=a
     c[n]=b[n]
     return c
+```
 
+```python
 # Example for User-based RDD
 items_movies = Train.select('movieId').rdd.map(lambda data:data.movieId).collect()
 items_movies = list(dict.fromkeys(items_movies))
