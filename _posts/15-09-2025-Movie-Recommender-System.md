@@ -27,7 +27,7 @@ In this post, I'll walk you through a project where I implemented **collaborativ
 
 ### The Data Behind the Magic
 
-My project utilized the `ml-latest-small` dataset from MovieLens, a fantastic resource for exploring recommendation systems. This dataset contains:
+My project utilized the `ml-latest-small` dataset from MovieLens, a fantastic resource for exploring recommendation systems retrieved by the University of Minnesota. This dataset contains:
 
 *   **100,836 ratings** and **3,683 tag applications** across **9,742 movies**.
 *   Data from **610 users** who each rated at least 20 movies.
@@ -40,17 +40,6 @@ The core idea is to leverage the `ratings.csv` file, which tells us how users ha
 First things first, I set up a Spark session – a crucial step for handling large datasets efficiently.
 
 ```python
-import pyspark
-import pandas as pd
-import numpy as np
-from pyspark.sql import SparkSession
-from pyspark import SparkContext, SparkConf
-from pyspark.mllib.recommendation import ALS
-from pyspark.mllib.recommendation import MatrixFactorizationModel
-import pyspark.sql.functions as F
-from math import sqrt
-from pyspark.ml.evaluation import RegressionEvaluator
-from pyspark.sql import Row
 
 conf = SparkConf()
 sc = SparkContext(conf=conf)
@@ -67,16 +56,11 @@ Movies_df = spark.read.csv("ml-latest-small/movies.csv",header=True)
 Ratings_df = spark.read.csv("ml-latest-small/ratings.csv",header=True)
 ```
 
-After loading, I inspected the schemas and converted the `userId`, `movieId`, and `rating` columns to appropriate numerical types (`integer` and `float`) and dropped the `timestamp` column as it wasn't needed for this specific collaborative filtering approach.
+![Extraction Pipeline](https://github.com/user-attachments/assets/4f296a4e-78b7-4f78-b678-da8ccf4444d0){: .mx-auto.d-block :}
 
-```python
-Ratings_df=Ratings_df.withColumn('rating', Ratings_df['rating'].cast("float"))
-Ratings_df=Ratings_df.withColumn('userId', Ratings_df['userId'].cast("integer"))
-Ratings_df=Ratings_df.withColumn('movieId', Ratings_df['movieId'].cast("integer"))
-Ratings_df = Ratings_df.drop(*['timestamp'])
-```
+![Extraction Pipeline](https://github.com/user-attachments/assets/d710b67c-eb09-4d9c-a06b-5b617c62fcd2){: .mx-auto.d-block :}
 
-I also took a moment to understand the distribution of ratings per user and per movie, which is always good practice.
+To understand the distribution of our data, here are some small samples.
 
 ### Training and Testing Split
 
