@@ -13,20 +13,6 @@ mathjax: true
 author: Nuno Pedrosa
 ---
 
-At its heart, collaborative filtering is incredibly intuitive. The core idea is brilliantly simple: "Show me what you enjoy, and I'll track down others who share your taste. Then, I'll tell you about the stuff they discovered that you haven't seen yet."
-
-It's all about tapping into the collective wisdom of a big group of people to produce personalized suggestions. Instead of getting to know what a movie is (like its genre or who's in it), it focuses entirely on how people interact with movies.
-
-![Pipelines](https://github.com/user-attachments/assets/726f4238-a7d5-467a-a404-ea240e781086){: .mx-auto.d-block :}
-
-**Fig. 1.** Collaborative Filtering vs Content Based Filtering
-
-That's a very detailed and well-structured project! I can definitely help you craft a blog post from this.
-
-Here's a draft for your blog post, incorporating your analysis and results. I'll add an image at the beginning to make it more engaging.
-
----
-
 ## Unveiling Movie Preferences: A Deep Dive into Collaborative Filtering with Spark
 
 Have you ever wondered how services like MovieLens magically know what movies you'll love? The secret often lies in a powerful technique called **Collaborative Filtering**. In this post, I'll walk you through a project where I implemented collaborative filtering using Apache Spark to build a movie recommendation system based on the MovieLens dataset.
