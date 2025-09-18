@@ -95,16 +95,6 @@ def RatingJunction(a,b):
     return c
 ```
 
-```python
-# Example for User-based RDD
-items_movies = Train.select('movieId').rdd.map(lambda data:data.movieId).collect()
-items_movies = list(dict.fromkeys(items_movies))
-Train_user_RDD = Train.rdd.map(lambda data:(data.movieId,data.rating,data.userId))
-Train_user_RDD = Train_user_RDD.map((lambda data:transformRating(data[0],data[1],data[2],items_movies)))
-Train_user_RDD = Train_user_RDD.map(lambda item: (item[0],item[1]))
-Train_user_RDD = Train_user_RDD.reduceByKey(lambda data_1,data_2:RatingJunction(data_1,data_2))
-```
-
 The resulting RDDs look something like this (one based on users and another based on items), with `None` representing unrated movies/users:
 
 ```
