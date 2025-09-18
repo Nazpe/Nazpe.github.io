@@ -160,6 +160,14 @@ def cosine_sim(item):
 similarityRDD=JoinedRDD.map(lambda data: cosine_sim(data))
 ```
 
+A small take of the Similarity_RDD:
+
+```python
+[((1, 1), 1.0000000000000002),
+ ((1, 3), 0.10202629136285349),
+ ((1, 6), 0.05443336831241767)]
+```
+
 To optimize and focus on meaningful relationships, I filtered out similarities below a threshold of 0.3, considering them weak correlations. This significantly reduces computation time later on. Then, transformed the RDD into a dictionary of movie similarity.
 
 ### Predicting Scores for Unrated Movies
