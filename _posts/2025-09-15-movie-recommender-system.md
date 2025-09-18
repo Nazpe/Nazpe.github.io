@@ -223,33 +223,29 @@ Here are some example recommendations for User 1:
 *   Dangerous Minds (1995)
 *   ... and many more!
 
-### Validating the Results: RMSE and Precision@10
+And some example recommendations for User 2:
 
-To understand how well our model performs, I used two key metrics:
+*   Flight of the Navigator (1986)
+*   Troll 2 (1990)
+*   Before Sunrise (1995)
+*   Ocean's Eleven (2001)
+*   ... 
+
+### Validating the Results
+
+To understand how well our model performs, I used the test set, and compare the real values given by the users with the predicted values. I used two key metrics:
 
 1.  **Root Mean Squared Error (RMSE):** This metric tells us the average magnitude of the errors between predicted and actual ratings. A lower RMSE indicates better accuracy.
-2.  **Precision@10:** This measures, out of the top 10 recommended movies, how many were actually liked by the user (based on their real ratings in the test set, above a certain threshold, e.g., 3.5 stars).
+2.  **Precision@10:** This measures, out of the top 10 recommended movies, how many were actually liked by the user (based on their real ratings in the test set, above a certain threshold, in this case, 3.5 stars).
 
-My model achieved an **RMSE of 1.17**. This means, on average, our predicted ratings were off by about 1.17 stars from the user's actual ratings. While not perfect, it's a reasonable starting point for identifying movies a user might enjoy.
+My model achieved an **RMSE of 1.17**. This means, on average, our predicted ratings were off by about 1.17 stars from the user's actual ratings. It's a reasonable starting point for identifying movies a user might enjoy.
 
-For Precision@10, the results varied by user. User 1 had an impressive 90% precision, meaning 9 out of their top 10 recommendations were genuinely liked. Other users showed varying degrees of success. The overall mean Precision@10 across the analyzed users was **0.67**.
-
-```python
-# RMSE calculation
-evaluator = RegressionEvaluator(metricName="rmse", labelCol="rating", predictionCol="prediction") 
-RMSE = evaluator.evaluate(Test_predict)
-print(f"RMSE: {RMSE}")
-
-# Precision@10 calculation
-# ... (code as provided in your project) ...
-print('Top 10 algorithm mean:')
-print(Top10_mean)
-```
+For Precision@10, the results varied by user. User 1 had an impressive 90% precision, meaning 9 out of their top 10 recommendations were genuinely liked. Other users showed varying degrees of success. The overall mean Precision@10 across the analyzed users was **0.67**. However, the only user that has at least 10 ratings possible to compare is user 1, so the results obtained for the other users aren't a "real" top 10.
 
 The variation in Precision@10 highlights an important aspect: the performance of recommendation systems can differ across users, especially if some users have fewer ratings in the test set that meet the comparison criteria.
 
 ### Conclusion
 
-This project demonstrates a fundamental collaborative filtering approach using Spark. While more advanced techniques like Alternating Least Squares (ALS) can often yield better results (and are built into Spark MLlib!), this direct RDD-based implementation provides a solid understanding of the underlying mechanics of user-item similarity and rating prediction. The results, with an RMSE of 1.17 and a mean Precision@10 of 0.67, show that even a basic collaborative filtering system can provide valuable movie recommendations.
+This project demonstrates a fundamental collaborative filtering approach using Spark. While other techniques like Alternating Least Squares (ALS) can yield better results (and are built into Spark MLlib!), this direct RDD-based implementation provides a solid understanding of the underlying mechanics of user-item similarity and rating prediction. The results, with an RMSE of 1.17 and a mean Precision@10 of 0.67, show that even a fundamental collaborative filtering system can provide valuable movie recommendations.
 
 
