@@ -174,7 +174,7 @@ To optimize and focus on meaningful relationships, I filtered out similarities b
 
 With movie similarities in hand, the next step was to predict ratings for movies a user hasn't seen yet. For each unrated movie by a user:
 
-1.  I identified the 10 most similar movies that the user **had** rated.
+1.  For every movie "i" non rated by a user, I calculate the 10 biggest similarites that this movie has, and, at the same time, that the user as rated.
 2.  The predicted score was then calculated as the weighted average of the user's ratings for these similar movies, where the weights are the similarity scores.
 
 ```python
@@ -208,6 +208,8 @@ def scores(item):
 
 ScoresRDD=Train_user_RDD.map(lambda data: scores(data))
 ```
+
+ScoresRDD is a RDD with the predicted scores, scores represented by 0 are movies that, for the user in question, the algorithm didn't foud similarities.
 
 ### Generating Recommendations
 
