@@ -10,13 +10,15 @@ mathjax: true
 author: Nuno Pedrosa
 ---
 
-The sheer volume of legislative speeches and documents produced by bodies like the European Parliament makes it impossible for humans to manually identify overarching themes and their evolution. This is where computational linguistics and machine learning come in. The paper we replicated, "Exploring the Political Agenda of the European Parliament Using a Dynamic Topic Modeling Approach" by Greene and Cross (2016), introduced a two-layer NMF method to tackle this very challenge.
+A analysis and simulation of "Exploring the Political Agenda of the European Parliament Using a Dynamic Topic Modeling Approach" by Greene and Cross.
 
-Our goal was to replicate their core methodology: using NMF to extract latent topics from a corpus of news articles and evaluate its effectiveness, particularly in comparison to LDA.
+The sheer volume of legislative speeches and documents produced by bodies like the European Parliament makes it impossible for humans to manually identify overarching themes and their evolution. This is where computational linguistics and machine learning come in. The paper here replicated, introduced a two-layer NMF method to tackle this challenge.
+
+The goal was to replicate their core methodology: using NMF to extract latent topics from a corpus of news articles and evaluate its effectiveness, particularly in comparison to LDA. 
 
 ### The Toolkit: Python Libraries for Text Processing and Modeling
 
-Our first step was to set up our Python environment with the necessary libraries. We relied on a standard set for natural language processing and machine learning:
+ We relied on a standard set for natural language processing and machine learning:
 
 ```python
 import os
