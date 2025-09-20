@@ -14,38 +14,7 @@ A analysis and simulation of "Exploring the Political Agenda of the European Par
 
 The sheer volume of legislative speeches and documents produced by bodies like the European Parliament makes it impossible for humans to manually identify overarching themes and their evolution. This is where computational linguistics and machine learning come in. The paper here replicated, introduced a two-layer NMF method to tackle this challenge.
 
-The goal was to replicate their core methodology: using NMF to extract latent topics from a corpus of news articles and evaluate its effectiveness, particularly in comparison to LDA. 
-
-### The Toolkit: Python Libraries for Text Processing and Modeling
-
- We relied on a standard set for natural language processing and machine learning:
-
-```python
-import os
-import re
-import math
-import nltk
-import pandas as pd
-
-# for modeling 
-from sklearn.feature_extraction import DictVectorizer
-from sklearn.decomposition import NMF
-
-# for text processing
-from nltk.corpus import stopwords
-from nltk import pos_tag
-from nltk.stem import WordNetLemmatizer
-
-from gensim.models import Word2Vec
-from gensim import corpora, models
-from sklearn.metrics.pairwise import cosine_similarity,cosine_distances
-
-# Download NLTK data (if not already present)
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-nltk.download('averaged_perceptron_tagger')
-```
+The goal was to replicate their core methodology: leveraging NMF to extract latent topics from a corpus of news articles and evaluate its effectiveness, particularly in comparison to LDA. Using NLP and ML methods with python libraries such as sklearn, nltk and gensim.
 
 ### Data Preparation: From Raw Text to Meaningful Features
 
