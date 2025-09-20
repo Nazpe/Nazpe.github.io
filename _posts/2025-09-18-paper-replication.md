@@ -20,9 +20,7 @@ The goal was to replicate their core methodology: leveraging NMF to extract late
 
 We started with a sample corpus of 1,324 news articles, divided into three monthly windows. The raw text needed significant cleaning and structuring before any modeling could begin.
 
-#### 1. Importing the Data
-
-Our data was organized into folders by month. We wrote a simple script to read all text files into our processing pipeline.
+First, we import the data with a simple script to read all text files into the processing pipeline.
 
 ```python
 # expand pandas df column display width to enable easy inspection
@@ -42,7 +40,7 @@ for path in os.listdir(dir_path):
                 files.append(os.path.join(subpath, path2))
 ```
 
-#### 2. Tokenizing
+#### Tokenizing
 
 The next crucial step was tokenization, which involves breaking down text into individual words or "tokens." During this process, we also performed several normalization steps:
 *   Converting all text to lowercase.
