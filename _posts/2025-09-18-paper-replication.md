@@ -16,7 +16,7 @@ The sheer volume of legislative speeches and documents produced by bodies like t
 
 The goal was to replicate their core methodology: leveraging NMF to extract latent topics from a corpus of news articles and evaluate its effectiveness, particularly in comparison to LDA. Using NLP and ML methods with python libraries such as sklearn, nltk and gensim.
 
-### Data Preparation: From Raw Text to Meaningful Features
+### Data Preparation
 
 We started with a sample corpus of 1,324 news articles, divided into three monthly windows. The raw text needed significant cleaning and structuring before any modeling could begin.
 
