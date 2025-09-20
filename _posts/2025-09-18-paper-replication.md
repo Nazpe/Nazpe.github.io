@@ -193,6 +193,9 @@ With the optimal number of topics (`res_k = 11`) determined, we applied NMF. NMF
 
 *   **H** (components matrix): Represents the topics, where each row is a topic defined by non-negative weights for each term. Sorting these weights gives us the most important terms for each topic.
 *   **W** (document-topic matrix): Represents the membership weights of each document in each topic.
+ 
+<src="https://github.com/user-attachments/assets/d69e328a-60d2-4e80-9080-eb5eeb61b3b2" />
+
 
 ```python
 nmf_model = NMF(res_k, random_state=1) 
