@@ -42,7 +42,7 @@ for path in os.listdir(dir_path):
 
 #### Tokenizing
 
-The next crucial step was tokenization, which involves breaking down text into individual words or "tokens." During this process, we also performed several normalization steps:
+The next crucial step was tokenization, which involves breaking down the text into individual words or "tokens." During this process, normalization was also performed:
 *   Converting all text to lowercase.
 *   Removing punctuation, numbers, and short words (length less than 3).
 *   Eliminating common English stopwords (e.g., "the," "is," "a") which carry little semantic meaning for topic identification.
