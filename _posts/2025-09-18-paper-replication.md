@@ -174,14 +174,14 @@ w = nmf_model.fit_transform(a)
 
 ### Results: Unveiling the Topics!
 
-Now for the exciting part: interpreting the topics! By examining the top 10 terms for each of the 11 topics, we can discern the underlying themes.
+By examining the top 10 terms for each of the 11 topics, we can discern the underlying themes.
 
 ```python
 for i, topic in enumerate(nmf_model.components_):
     print("Topic", i, ":",[token_list[x[1]] for x in sorted(zip(topic,range(len(topic))), reverse = True)[:t]])
 ```
 
-Here's what we found:
+Here's what was found:
 
 *   **Topic 0:** ['technology', 'phone', 'video', 'speed', 'generation', 'device', 'network', 'broadband', 'image', 'picture'] - **Technology & Digital Agenda**
 *   **Topic 1:** ['club', 'player', 'football', 'team', 'chelsea', 'game', 'season', 'manager', 'champion', 'league'] - **Football/Sports**
@@ -195,16 +195,18 @@ Here's what we found:
 *   **Topic 9:** ['court', 'yukos', 'bankruptcy', 'gazprom', 'case', 'fraud', 'russia', 'rosneft', 'khodorkovsky', 'unit'] - **Business/Legal (Specific Cases)**
 *   **Topic 10:** ['film', 'actor', 'award', 'oscar', 'star', 'actress', 'comedy', 'movie', 'nomination', 'ceremony'] - **Film & Awards**
 
-These topics are remarkably coherent and distinguishable! For example, Topic 3 is clearly about music, Topic 5 about economics, and Topic 10 about movies. We even see two distinct football-related topics (general football vs. match specifics) and two entertainment topics.
+These topics are remarkably coherent and distinguishable! For example, Topic 1 is clearly about technology, Topic 5 about economics, and Topic 10 about movies. There are even two distinct football-related topics (general football vs. match specifics) and two entertainment topics.
 
-To further validate our model, we looked at the documents with the highest weights for each topic. As the filenames in our sample data included topic labels, we could directly check if the model's assigned topics matched the actual content.
+----- continuar aqui -------
+
+To further validate the model, we looked at the documents with the highest weights for each topic. As the filenames in our sample data included topic labels, we could directly check if the model's assigned topics matched the actual content.
 
 ```python
 for i in range(res_k):
     print("Topic", i, ":",[files[x[1]].split('/')[-1] for x in sorted(zip(w[:,i],range(len(w[:,i]))), reverse = True)[:t]])
 ```
 
-The results showed a clear alignment! Documents categorized as `tech_xxx.txt` consistently appeared in the technology topic, `football_xxx.txt` in the football topics, `businessxxx.txt` in the business/economy topics, and `entertainment_xxx.txt` in the music/film topics. This strong correspondence verifies the validity of our NMF model.
+The results showed a clear alignment! Documents categorized as `tech_xxx.txt` consistently appeared in the technology topic, `football_xxx.txt` in the football topics, `businessxxx.txt` in the business/economy topics, and `entertainment_xxx.txt` in the music/film topics. This strong correspondence verifies the validity of the NMF model.
 
 ### Comparative Analysis: NMF vs. LDA
 
