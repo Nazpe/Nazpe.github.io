@@ -80,9 +80,9 @@ for filename, tokens in text_tokens.items():
             nouns[filename][wordnet_lemmatizer.lemmatize(word)] = nouns[filename].get(wordnet_lemmatizer.lemmatize(word), 0) + text_tokens[filename][word]
 ```
 
-#### Building the Document-Term Matrix (A)
+#### Building the Document-Term Matrix (V)
 
-The cleaned and lemmatized data was then transformed into a document-term matrix, **A**. In this matrix, each row represents a document (news article), and each column represents a unique term. The values initially represent the term frequency (how many times a term appears in a document).
+The cleaned and lemmatized data was then transformed into a document-term matrix, **V**. In this matrix, each row represents a document (news article), and each column represents a unique term. The values initially represent the term frequency (how many times a term appears in a document).
 
 ```python
 dictvectorizer = DictVectorizer(sparse=False)
@@ -158,7 +158,7 @@ Best k: 11
 
 ### Non-Negative Matrix Factorization (NMF)
 
-With the optimal number of topics (`res_k = 11`) determined, we applied NMF. NMF factorizes our document-term matrix **A** into two non-negative matrices, **W** and **H**: **A = W * H**
+With the optimal number of topics (`res_k = 11`) determined, we applied NMF. NMF factorizes our document-term matrix **V** into two non-negative matrices, **W** and **H**: **V = W * H**
 
 *   **H** (components matrix): Represents the topics, where each row (k) is a topic defined by non-negative weights for each term, the columns represent the terms. Sorting these weights gives us the most important terms for each topic.
 *   **W** (document-topic matrix): With k columns, represents the membership weights of each document (line) in each topic.
