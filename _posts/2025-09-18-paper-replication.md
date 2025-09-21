@@ -108,9 +108,9 @@ for column_idx in range(len(token_list)):
 
 ### Finding the Optimal Number of Topics (k) with TC-W2V
 
-A critical decision in topic modeling is choosing the number of topics, `k`. Too few topics might merge distinct themes, while too many can create overly specific and redundant topics. We used Topic Coherence via Word2Vec (TC-W2V), a method that evaluates the semantic relatedness of the top terms within a topic. A higher coherence score indicates a more semantically meaningful topic. We aimed for `t = 10` terms per topic, as suggested in the original paper.
+A critical decision in topic modelling is choosing the number of topics, `k`. Too few topics might merge distinct themes, while too many can create overly specific and redundant topics. Here Topic Coherence via Word2Vec (TC-W2V) was used, a method that evaluates the semantic relatedness of the top terms within a topic. A higher coherence score indicates a more semantically meaningful topic. Using `t = 10` terms per topic, as suggested in the original paper.
 
-We iterated through a range of `k` values (10 to 25) and calculated the model coherence for each.
+Iterating through a range of `k` values (10 to 25) and calculating the model coherence for each.
 
 ```python
 max_model_coherence = 0
@@ -146,7 +146,7 @@ for k in range(10,26):
 print("Best k:", res_k)
 ```
 
-Our analysis showed that `k = 11` yielded the highest model coherence. This is the number of topics we moved forward with for our final NMF model.
+The analysis showed that `k = 11` yielded the highest model coherence. This is the number of topics to move forward with the final NMF model.
 
 ```
 k =  10 . Model coherence: 0.0023823067576934894
