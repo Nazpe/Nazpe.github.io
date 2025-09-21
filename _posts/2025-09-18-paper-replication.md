@@ -45,7 +45,7 @@ for path in os.listdir(dir_path):
 The next crucial step was tokenization, which involves breaking down the text into individual words or "tokens." During this process, normalization was also performed:
 *   Converting all text to lowercase.
 *   Removing punctuation, numbers, and short words (length less than 3).
-*   Eliminating common English stopwords (e.g., "the," "is," "a") which carry little semantic meaning for topic identification.
+*   Eliminating common English stopwords (e.g., "the," "is," "a") that carry little semantic meaning for topic identification.
 *   Counting term frequency within each document.
 
 ```python
@@ -62,9 +62,9 @@ for filename in files:
                     text_tokens[filename][token] = text_tokens[filename].get(token, 0) + 1
 ```
 
-#### 3. Lemmatizing
+#### Lemmatizing
 
-To ensure that different grammatical forms of a word (e.g., "walked," "walking," "walks") are treated as the same base word ("walk"), we applied lemmatization. This reduces sparsity in our data and helps to group related concepts. We specifically focused on lemmatizing nouns.
+To ensure that different grammatical forms of a word (e.g., "walked," "walking," "walks") are treated as the same base word ("walk"), lemmatization was applied. This reduces sparsity in our data and helps to group related concepts. This specifically focused on lemmatizing nouns.
 
 ```python
 wordnet_lemmatizer = WordNetLemmatizer()   # stored function to lemmatize each word
