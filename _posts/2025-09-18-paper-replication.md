@@ -80,7 +80,7 @@ for filename, tokens in text_tokens.items():
             nouns[filename][wordnet_lemmatizer.lemmatize(word)] = nouns[filename].get(wordnet_lemmatizer.lemmatize(word), 0) + text_tokens[filename][word]
 ```
 
-#### 4. Building the Document-Term Matrix (A)
+#### Building the Document-Term Matrix (A)
 
 The cleaned and lemmatized data was then transformed into a document-term matrix, **A**. In this matrix, each row represents a document (news article), and each column represents a unique term. The values initially represent the term frequency (how many times a term appears in a document).
 
@@ -93,9 +93,9 @@ print(a.shape)
 token_list = dictvectorizer.get_feature_names()
 ```
 
-#### 5. TF-IDF Weighting
+#### TF-IDF Weighting
 
-Raw term frequencies can be misleading, as very common words might appear frequently in all documents without being particularly distinctive. To address this, we applied Term Frequency-Inverse Document Frequency (TF-IDF) weighting. TF-IDF gives higher weight to terms that are frequent in a specific document but rare across the entire corpus, effectively highlighting more meaningful words for topic identification.
+Raw term frequencies can be misleading, as very common words might appear frequently in all documents without being particularly distinctive. To address this, we applied Term Frequency-Inverse Document Frequency (TF-IDF) weighting. TF-IDF gives higher weight to terms that are frequent in a specific document but rare across the entire corpus, effectively highlighting more meaningful words for topic identification. This also helps to produce diverse but semantically coherent topics.
 
 ```python
 for column_idx in range(len(token_list)):
