@@ -10,7 +10,7 @@ mathjax: true
 author: Nuno Pedrosa
 ---
 
-A analysis and simulation of "Exploring the Political Agenda of the European Parliament Using a Dynamic Topic Modeling Approach" by Greene and Cross.
+A analysis and simulation of "Exploring the Political Agenda of the European Parliament Using a Dynamic Topic Modeling Approach" by Greene and Cross https://www.cambridge.org/core/journals/political-analysis/article/abs/exploring-the-political-agenda-of-the-european-parliament-using-a-dynamic-topic-modeling-approach/BBC7751778E4542C7C6C69E6BF954E4B.
 
 The sheer volume of legislative speeches and documents produced by bodies like the European Parliament makes it impossible for humans to manually identify overarching themes and their evolution. This is where computational linguistics and machine learning come in. The paper here replicated, introduced a two-layer NMF method to tackle this challenge.
 
@@ -243,9 +243,51 @@ Words: 0.022*"said" + 0.013*"would" + 0.011*"government" + 0.009*"labour" + 0.00
 
 As you can see, the LDA topics frequently include generic terms like "said," "would," and "also." These are common connectors and verbs that don't contribute much to defining a specific topic. In contrast, NMF was able to move past this linguistic "noise" and identify much more fine-grained and semantically coherent topics. This observation strongly supports the original paper's claim about NMF's advantage in capturing niche topics and producing more interpretable results.
 
-### Conclusion: NMF's Power in Unstructured Text
+### NMF's Power in Unstructured Text
 
 This replication exercise clearly demonstrated the effectiveness of Non-Negative Matrix Factorization for topic modeling in unstructured text data. By meticulously pre-processing the text, carefully selecting the optimal number of topics using coherence measures, and applying NMF, distinct and semantically meaningful themes were successfully extracted.
 
 The comparison with LDA further underscored NMF's strength, particularly in its ability to filter out generic terms and truly capture the essence of different topics. This makes NMF a powerful tool for researchers and analysts looking to understand large corpora of documents, whether they are political speeches, news articles, or any other form of text.
+
+### Analysing the results of the paper
+
+Between 1999 and 2014, over 210,000 speeches delivered in English by 1,735 Members of the European Parliament (MEPs) across 28 nations were analyzed to uncover the evolving political agenda of the European Parliament.
+
+<img width="540" height="250" alt="image" src="https://github.com/user-attachments/assets/41b85b7b-5951-42b2-a21b-b7c79db66f91" />
+
+The evolution of key terms within topics shows how certain issues gained or lost prominence. Interestingly, even as terminology changed, shared core terms persisted—demonstrating the semantic validity of the results and highlighting stable thematic undercurrents within parliamentary debates.
+
+<img width="481" height="269" alt="image" src="https://github.com/user-attachments/assets/e53a92df-da20-4a76-9aca-d01cb3717f8e" />
+Response to Exogenous Shocks
+
+External economic shocks significantly influenced parliamentary discussions. The timeline below marks major events that shaped the discourse:
+
+A: Start of the global financial crisis
+
+B: Revelations of Greece’s hidden debt
+
+C: Ireland receives liquidity injections
+
+D: ECB declares it will do "whatever it takes" to save the euro
+
+These moments led to sharp changes in topic emphasis, reflecting urgent political and economic concerns.
+
+<img width="481" height="261" alt="image" src="https://github.com/user-attachments/assets/fe39c5b3-f59a-45d9-ac0d-c60be1e01440" />
+Treaty Revisions in Discourse
+
+Treaty revisions were infrequent but significant in parliamentary rhetoric, appearing only sporadically throughout the 15-year period:
+
+A: Ireland’s rejection of the Treaty of Nice
+
+B: Negotiation of the Constitutional Treaty
+
+C: EU Enlargement Treaty
+
+D: Signing of the Lisbon Treaty
+
+These key institutional changes triggered brief but notable shifts in political focus.
+
+Dynamic topic modeling provides a powerful lens to trace the semantic and political evolution of the European Parliament. Through this method, researchers can identify how major events, both expected and unexpected, have shaped the political narrative across Europe’s most diverse legislative body.
+
+
 
