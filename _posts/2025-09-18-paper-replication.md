@@ -194,7 +194,7 @@ To further validate the model, the documents with the highest weights for each t
 
 ### Comparative Analysis: NMF vs. LDA
 
-The original paper highlighted NMF's ability to uncover "niche topics" and produce more semantically coherent results compared to traditional LDA. We performed a basic LDA implementation to see this difference firsthand.
+The original paper highlighted NMF's ability to uncover "niche topics" and produce more semantically coherent results compared to traditional LDA. A basic LDA implementation was performed to observe this difference firsthand.
 
 #### LDA Implementation
 
@@ -245,13 +245,7 @@ As you can see, the LDA topics frequently include generic terms like "said," "wo
 
 ### Conclusion: NMF's Power in Unstructured Text
 
-Our replication exercise clearly demonstrated the effectiveness of Non-Negative Matrix Factorization for topic modeling in unstructured text data. By meticulously pre-processing the text, carefully selecting the optimal number of topics using coherence measures, and applying NMF, we were able to extract distinct and semantically meaningful themes.
+This replication exercise clearly demonstrated the effectiveness of Non-Negative Matrix Factorization for topic modeling in unstructured text data. By meticulously pre-processing the text, carefully selecting the optimal number of topics using coherence measures, and applying NMF, distinct and semantically meaningful themes were successfully extracted.
 
 The comparison with LDA further underscored NMF's strength, particularly in its ability to filter out generic terms and truly capture the essence of different topics. This makes NMF a powerful tool for researchers and analysts looking to understand large corpora of documents, whether they are political speeches, news articles, or any other form of text.
 
-This project was a fantastic learning experience, offering practical insight into the nuances of topic modeling and validating a robust approach to uncovering hidden agendas in complex datasets.
-
-
----
-
-I hope this blog post draft captures the essence of your replication exercise well! Let me know if you'd like any adjustments or additional images.
