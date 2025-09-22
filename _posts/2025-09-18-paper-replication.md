@@ -174,30 +174,21 @@ w = nmf_model.fit_transform(a)
 
 ### Results: Unveiling the Topics!
 
-By examining the top 10 terms for each of the 11 topics, we can discern the underlying themes.
+In the top 10 terms for each of the 11 topics there are underlying themes. Here's what was found:
 
-```python
-for i, topic in enumerate(nmf_model.components_):
-    print("Topic", i, ":",[token_list[x[1]] for x in sorted(zip(topic,range(len(topic))), reverse = True)[:t]])
-```
+*   **Topic 0 -** technology, phone, video, speed, generation, device, network, broadband, image, picture - **Technology & Digital Agenda**
+*   **Topic 1 -** club, player, football, team, chelsea, game, season, manager, champion, league - **Football/Sports**
+*   **Topic 2 -** election, blair, party, minister, government, leader, tory, secretary, chancellor, democrat - **Politics & Elections**
+*   **Topic 3 -** music, band, song, rock, artist, album, singer, record, single, award - **Music & Entertainment**
+*   **Topic 4 -** forsyth, frederick, terrorist, internment, forsythe, totalitarianism, qaeda, fundamentalism, churchill, liberty - **Conflict/Terrorism (Specific Events)**
+*   **Topic 5 -** growth, economy, market, price, rate, rise, bank, investment, analyst, dollar - **Economy & Finance**
+*   **Topic 6 -** angel, rhapsody, bland, brit, guy, pulp, cheesy, deserve, joss, joke - **Entertainment/Pop Culture (Specific References)**
+*   **Topic 7 -** sub, minute, goal, ball, yard, header, kick, cech, duff, cross - **Football/Match Details**
+*   **Topic 8 -** software, virus, user, mail, program, computer, security, site, information, attack - **Cybersecurity & Software**
+*   **Topic 9 -** court, yukos, bankruptcy, gazprom, case, fraud, russia, rosneft, khodorkovsky, unit - **Business/Legal (Specific Cases)**
+*   **Topic 10 -** film, actor, award, oscar, star, actress, comedy, movie, nomination, ceremony - **Film & Awards**
 
-Here's what was found:
-
-*   **Topic 0:** ['technology', 'phone', 'video', 'speed', 'generation', 'device', 'network', 'broadband', 'image', 'picture'] - **Technology & Digital Agenda**
-*   **Topic 1:** ['club', 'player', 'football', 'team', 'chelsea', 'game', 'season', 'manager', 'champion', 'league'] - **Football/Sports**
-*   **Topic 2:** ['election', 'blair', 'party', 'minister', 'government', 'leader', 'tory', 'secretary', 'chancellor', 'democrat'] - **Politics & Elections**
-*   **Topic 3:** ['music', 'band', 'song', 'rock', 'artist', 'album', 'singer', 'record', 'single', 'award'] - **Music & Entertainment**
-*   **Topic 4:** ['forsyth', 'frederick', 'terrorist', 'internment', 'forsythe', 'totalitarianism', 'qaeda', 'fundamentalism', 'churchill', 'liberty'] - **Conflict/Terrorism (Specific Events)**
-*   **Topic 5:** ['growth', 'economy', 'market', 'price', 'rate', 'rise', 'bank', 'investment', 'analyst', 'dollar'] - **Economy & Finance**
-*   **Topic 6:** ['angel', 'rhapsody', 'bland', 'brit', 'guy', 'pulp', 'cheesy', 'deserve', 'joss', 'joke'] - **Entertainment/Pop Culture (Specific References)**
-*   **Topic 7:** ['sub', 'minute', 'goal', 'ball', 'yard', 'header', 'kick', 'cech', 'duff', 'cross'] - **Football/Match Details**
-*   **Topic 8:** ['software', 'virus', 'user', 'mail', 'program', 'computer', 'security', 'site', 'information', 'attack'] - **Cybersecurity & Software**
-*   **Topic 9:** ['court', 'yukos', 'bankruptcy', 'gazprom', 'case', 'fraud', 'russia', 'rosneft', 'khodorkovsky', 'unit'] - **Business/Legal (Specific Cases)**
-*   **Topic 10:** ['film', 'actor', 'award', 'oscar', 'star', 'actress', 'comedy', 'movie', 'nomination', 'ceremony'] - **Film & Awards**
-
-These topics are remarkably coherent and distinguishable! For example, Topic 1 is clearly about technology, Topic 5 about economics, and Topic 10 about movies. There are even two distinct football-related topics (general football vs. match specifics) and two entertainment topics.
-
------ continuar aqui -------
+These topics are remarkably coherent. For example, Topic 1 is clearly about technology, Topic 5 about economics, and Topic 10 about movies. There are even two distinct football-related topics (general football vs. match specifics) and two entertainment topics.
 
 To further validate the model, we looked at the documents with the highest weights for each topic. As the filenames in our sample data included topic labels, we could directly check if the model's assigned topics matched the actual content.
 
