@@ -10,7 +10,7 @@ mathjax: true
 author: Nuno Pedrosa
 ---
 
-A analysis and simulation of "Exploring the Political Agenda of the European Parliament Using a Dynamic Topic Modeling Approach" by Greene and Cross https://www.cambridge.org/core/journals/political-analysis/article/abs/exploring-the-political-agenda-of-the-european-parliament-using-a-dynamic-topic-modeling-approach/BBC7751778E4542C7C6C69E6BF954E4B.
+A analysis and simulation of "Exploring the Political Agenda of the European Parliament Using a Dynamic Topic Modeling Approach" by Greene and Cross ["Exploring the Political Agenda of the European Parliament Using a Dynamic Topic Modeling Approach" by Greene and Cross](https://www.cambridge.org/core/journals/political-analysis/article/abs/exploring-the-political-agenda-of-the-european-parliament-using-a-dynamic-topic-modeling-approach/BBC7751778E4542C7C6C69E6BF954E4B).
 
 The sheer volume of legislative speeches and documents produced by bodies like the European Parliament makes it impossible for humans to manually identify overarching themes and their evolution. This is where computational linguistics and machine learning come in. The paper here replicated, introduced a two-layer NMF method to tackle this challenge.
 
