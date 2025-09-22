@@ -190,14 +190,7 @@ In the top 10 terms for each of the 11 topics there are underlying themes. Here'
 
 These topics are remarkably coherent. For example, Topic 1 is clearly about technology, Topic 5 about economics, and Topic 10 about movies. There are even two distinct football-related topics (general football vs. match specifics) and two entertainment topics.
 
-To further validate the model, we looked at the documents with the highest weights for each topic. As the filenames in our sample data included topic labels, we could directly check if the model's assigned topics matched the actual content.
-
-```python
-for i in range(res_k):
-    print("Topic", i, ":",[files[x[1]].split('/')[-1] for x in sorted(zip(w[:,i],range(len(w[:,i]))), reverse = True)[:t]])
-```
-
-The results showed a clear alignment! Documents categorized as `tech_xxx.txt` consistently appeared in the technology topic, `football_xxx.txt` in the football topics, `businessxxx.txt` in the business/economy topics, and `entertainment_xxx.txt` in the music/film topics. This strong correspondence verifies the validity of the NMF model.
+To further validate the model, the documents with the highest weights for each topic were examined. Since the filenames in the sample data included topic labels, it was possible to directly verify whether the model's assigned topics aligned with the actual content. The results showed a clear alignment. Documents categorized as `tech_xxx.txt` consistently appeared in the technology topic, `football_xxx.txt` in the football topics, `businessxxx.txt` in the business/economy topics, and `entertainment_xxx.txt` in the music/film topics. This strong correspondence verifies the validity of the NMF model.
 
 ### Comparative Analysis: NMF vs. LDA
 
