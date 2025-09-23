@@ -18,7 +18,7 @@ The goal was to replicate their core methodology: leveraging NMF to extract late
 
 ### Data Preparation
 
-We started with a sample corpus of 1,324 news articles, divided into three monthly windows. The raw text needed significant cleaning and structuring before any modeling could begin.
+For this replication exercise, the sample corpus consisted of 1,324 news articles., divided into three monthly windows. The raw text needed significant cleaning and structuring before any modeling could begin.
 
 First, we import the data with a simple script to read all text files into the processing pipeline.
 
@@ -253,15 +253,15 @@ The comparison with LDA further underscored NMF's strength, particularly in its 
 
 Between 1999 and 2014, over 210,000 speeches delivered in English by 1,735 Members of the European Parliament (MEPs) across 28 nations were analyzed to uncover the evolving political agenda of the European Parliament.
 
-<img width="540" height="250" alt="image" src="https://github.com/user-attachments/assets/41b85b7b-5951-42b2-a21b-b7c79db66f91" />{: .mx-auto.d-block :}
+![NMF](https://github.com/user-attachments/assets/41b85b7b-5951-42b2-a21b-b7c79db66f91){: .mx-auto.d-block :}
 
-evolution of terms describing the topic
+**Fig. 2.** Evolution of terms describing the topic.
 
 The evolution of key terms within topics shows how certain issues gained or lost prominence. Interestingly, even as terminology changed, shared core terms persisted—demonstrating the semantic validity of the results and highlighting stable thematic undercurrents within parliamentary debates.
 
-<img width="481" height="269" alt="image" src="https://github.com/user-attachments/assets/e53a92df-da20-4a76-9aca-d01cb3717f8e" />{: .mx-auto.d-block :}
+![NMF](https://github.com/user-attachments/assets/e53a92df-da20-4a76-9aca-d01cb3717f8e){: .mx-auto.d-block :}
 
-Response to Exogenous Shocks.
+**Fig. 3.** Response to Exogenous Shocks.
 
 External economic shocks significantly influenced parliamentary discussions. The timeline below marks major events that shaped the discourse:
 
@@ -275,9 +275,9 @@ D: ECB declares it will do "whatever it takes" to save the euro
 
 These moments led to sharp changes in topic emphasis, reflecting urgent political and economic concerns.
 
-<img width="481" height="261" alt="image" src="https://github.com/user-attachments/assets/fe39c5b3-f59a-45d9-ac0d-c60be1e01440" />{: .mx-auto.d-block :}
+![NMF](https://github.com/user-attachments/assets/fe39c5b3-f59a-45d9-ac0d-c60be1e01440){: .mx-auto.d-block :}
 
-Treaty Revisions in Discourse.
+**Fig. 4.** Treaty Revisions in Discourse.
 
 Treaty revisions were infrequent but significant in parliamentary rhetoric, appearing only sporadically throughout the 15-year period:
 
