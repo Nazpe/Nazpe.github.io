@@ -264,11 +264,10 @@ The evolution of key terms within topics shows how certain issues gained or lost
 **Fig. 3.** Response to Exogenous Shocks.
 
 External economic shocks significantly influenced parliamentary discussions. The timeline below marks major events that shaped the discourse:
-
-A: Start of the global financial crisis
-B: Revelations of Greece’s hidden debt
-C: Ireland receives liquidity injections
-D: ECB declares it will do "whatever it takes" to save the euro
+* A: Start of the global financial crisis
+* B: Revelations of Greece’s hidden debt
+* C: Ireland receives liquidity injections
+* D: ECB declares it will do "whatever it takes" to save the euro
 
 These moments led to sharp changes in topic emphasis, reflecting urgent political and economic concerns.
 
@@ -277,11 +276,10 @@ These moments led to sharp changes in topic emphasis, reflecting urgent politica
 **Fig. 4.** Treaty Revisions in Discourse.
 
 Treaty revisions were infrequent but significant in parliamentary rhetoric, appearing only sporadically throughout the 15-year period:
-
-A: Ireland’s rejection of the Treaty of Nice
-B: Negotiation of the Constitutional Treaty
-C: EU Enlargement Treaty
-D: Signing of the Lisbon Treaty
+* A: Ireland’s rejection of the Treaty of Nice
+* B: Negotiation of the Constitutional Treaty
+* C: EU Enlargement Treaty
+* D: Signing of the Lisbon Treaty
 
 These key institutional changes triggered brief but notable shifts in political focus.
 
