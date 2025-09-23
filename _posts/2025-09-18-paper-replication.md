@@ -18,7 +18,7 @@ The goal was to replicate their core methodology: leveraging NMF to extract late
 
 ### Data Preparation
 
-For this replication exercise, the sample corpus consisted of 1,324 news articles., divided into three monthly windows. The raw text needed significant cleaning and structuring before any modeling could begin.
+For this replication exercise, the sample corpus consisted of 1,324 news articles, divided into three monthly windows. The raw text needed significant cleaning and structuring before any modeling could begin.
 
 First, we import the data with a simple script to read all text files into the processing pipeline.
 
