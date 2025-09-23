@@ -188,7 +188,7 @@ In the top 10 terms for each of the 11 topics there are underlying themes. Here'
 *   **Topic 9 -** court, yukos, bankruptcy, gazprom, case, fraud, russia, rosneft, khodorkovsky, unit - **Business/Legal (Specific Cases)**
 *   **Topic 10 -** film, actor, award, oscar, star, actress, comedy, movie, nomination, ceremony - **Film & Awards**
 
-These topics are remarkably coherent. For example, Topic 1 is clearly about technology, Topic 5 about economics, and Topic 10 about movies. There are even two distinct football-related topics (general football vs. match specifics) and two entertainment topics.
+These topics are remarkably coherent. For example, Topic 1 is clearly about technology, Topic 5 about economics, and Topic 10 about movies. There are even two distinct football related topics (general football vs. match specifics) and two entertainment topics.
 
 To further validate the model, the documents with the highest weights for each topic were examined. Since the filenames in the sample data included topic labels, it was possible to directly verify whether the model's assigned topics aligned with the actual content. The results showed a clear alignment. Documents categorized as `tech_xxx.txt` consistently appeared in the technology topic, `football_xxx.txt` in the football topics, `businessxxx.txt` in the business/economy topics, and `entertainment_xxx.txt` in the music/film topics. This strong correspondence verifies the validity of the NMF model.
 
