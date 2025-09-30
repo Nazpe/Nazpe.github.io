@@ -4,7 +4,6 @@ title: Building a Local Agentic AI system
 subtitle: With langgraph and ollama
 gh-repo: nazpe/Mail-Local-Agentic-AI
 gh-badge: [star, follow]
-cover-img: /assets/img/path.jpg
 comments: true
 mathjax: true
 tags: [text]
