@@ -9,10 +9,184 @@ tags: [books, test]
 author: Sharon Smith and Barry Simpson
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+## Taming the Inbox: My Journey with Agentic AI for Email Management
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+In an age where our inboxes often feel like digital black holes, overflowing with unread messages and urgent requests, the idea of an intelligent assistant to cut through the noise is incredibly appealing. That's exactly the problem I set out to solve with my latest project: an agentic AI tool designed to analyze and condense information from your email account.
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
+**The Problem: Email Overload**
 
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+We've all been there. Hundreds, if not thousands, of unread emails. Important updates buried under newsletters, promotions, and spam. Sifting through it all is a time sink, and the sheer volume can lead to missed opportunities or delayed responses. My goal was to create a system that could proactively understand what's in my inbox and present me with the crucial information, freeing up valuable time and mental energy.
+
+**Introducing the Email AI Agent**
+
+My solution is an AI agent built using `langchain` and `langgraph`, powered by a local Large Language Model (LLM). This agent isn't just a simple filter; it's an intelligent system capable of:
+
+1.  **Listing Unread Emails:** It can quickly scan your inbox and provide a concise list of unread messages, including their sender, subject, and date.
+2.  **Summarizing Email Content:** The real power lies here. Given an email's unique ID, the agent can generate a short, plain-text summary of its content, allowing you to grasp the essence of a message without opening it.
+
+Imagine asking your email client, "What's new in my inbox?" and getting a bulleted list of subjects and senders, followed by "Summarize the email about the project deadline." – that's the kind of interaction this tool enables.
+
+**Under the Hood: How It Works**
+
+Let's dive a bit into the technical architecture.
+
+**1. Local-First Approach with Ollama**
+
+One of the key decisions for this project was to leverage a local LLM. While cloud-based LLMs like ChatGPT or Gemini are powerful, running a model locally offers several advantages, including enhanced privacy and reduced API costs. I used `Ollama` to host `qwen3:1.7b`, a compact yet capable model. This setup means your sensitive email data never leaves your machine to be processed by a third-party LLM provider.
+
+First, you'd typically initialize your chat model like this:
+
+```python
+from langchain.chat_models import init_chat_model
+
+CHAT_MODEL = 'qwen3:1.7b'
+llm = init_chat_model(CHAT_MODEL, model_provider='ollama')
+```
+
+**2. Connecting to Your Inbox: IMAP**
+
+To interact with the email server, I used `imap-client` and `imap_tools`. These libraries allow the agent to securely log in to your email account (using credentials stored safely in a `.env` file) and fetch email metadata or full content.
+
+Connecting to the mailbox is a straightforward process:
+
+```python
+import os
+from dotenv import load_dotenv
+from imap_tools import MailBox
+
+load_dotenv() # Load environment variables
+
+IMAP_HOST = os.getenv('IMAP_HOST')
+IMAP_USER = os.getenv('IMAP_USER')
+IMAP_PASSWORD = os.getenv('IMAP_PASSWORD')
+IMAP_FOLDER = 'INBOX'
+
+def connect():
+    mail_box = MailBox(IMAP_HOST)
+    mail_box.login(IMAP_USER, IMAP_PASSWORD, initial_folder=IMAP_FOLDER)
+    return mail_box
+```
+
+**3. The Agentic Core: LangChain and LangGraph**
+
+This is where the "intelligence" comes in.
+
+*   **`langchain`:** This framework helps connect the LLM with external tools. I defined two custom tools: `list_unread_emails()` and `summarize_email(uid)`. The `@tool` decorator from `langchain_core.tools` makes it easy to expose these functions to the LLM.
+
+    Here's how the `list_unread_emails` tool is defined:
+
+    ```python
+    from langchain_core.tools import tool
+    from imap_tools import AND
+    import json
+
+    @tool
+    def list_unread_emails():
+        """Return a bullet list of every UNREAD message's UID, subject, date and sender"""
+        with connect() as mb:
+            unread = list(mb.fetch(criteria=AND(seen=False), headers_only=True, mark_seen=False))
+
+        if not unread:
+            return 'You have no unread messages.'
+
+        response = json.dumps([
+            {
+                'uid': mail.uid,
+                'date': mail.date.astimezone().strftime('%Y-%m-%d %H:%M'),
+                'subject': mail.subject,
+                'sender': mail.from_
+            } for mail in unread
+        ])
+        return response
+    ```
+
+    And the `summarize_email` tool:
+
+    ```python
+    @tool
+    def summarize_email(uid):
+        """Summarize a single e-mail given it's IMAP UID. Return a short summary of the e-mails content / body in plain text."""
+        with connect() as mb:
+            mail = next(mb.fetch(AND(uid=uid), mark_seen=False), None)
+
+            if not mail:
+                return f'Could not summarize e-mail with UID {uid}.'
+
+            prompt = (
+                "Summarize this e-mail concisely:\n\n"
+                f"Subject: {mail.subject}\n"
+                f"Sender: {mail.from_}\n"
+                f"Date: {mail.date}\n\n"
+                f"{mail.text or mail.html}"
+            )
+            # 'raw_llm' is another instance of init_chat_model for summarization
+            return raw_llm.invoke(prompt).content
+    ```
+    Once defined, these tools are bound to the LLM:
+    ```python
+    llm = llm.bind_tools([list_unread_emails, summarize_email])
+    ```
+
+*   **`langgraph`:** This library is crucial for building robust, multi-step agentic workflows. It allows the AI to decide *when* to use which tool and how to sequence its actions.
+
+    *   **LLM Node:** The core reasoning component. The LLM processes your request and decides if it needs to use a tool or if it can answer directly.
+    *   **Tool Node:** If the LLM decides to use a tool (e.g., to list emails or summarize one), this node executes the Python function associated with that tool.
+    *   **Router:** After the LLM's response, the router checks if a tool was called. If so, it routes the flow back to the `tools_node` to execute it; otherwise, the conversation ends.
+
+    The graph definition ties these components together:
+
+    ```python
+    from langgraph.prebuilt import ToolNode
+    from langgraph.graph import StateGraph, START, END
+    from typing import TypedDict
+
+    class ChatState(TypedDict):
+        messages: list
+
+    # LLM node: invokes the LLM
+    def llm_node(state):
+        response = llm.invoke(state['messages'])
+        return {'messages': state['messages'] + [response]}
+
+    # Router: decides whether to use tools or end
+    def router(state):
+        last_message = state['messages'][-1]
+        return 'tools' if getattr(last_message, 'tool_calls', None) else 'end'
+
+    # Tool node: executes tools
+    tool_node = ToolNode([list_unread_emails, summarize_email])
+    def tools_node(state):
+        result = tool_node.invoke(state)
+        return {'messages': state['messages'] + result['messages']}
+
+    # Build the graph
+    builder = StateGraph(ChatState)
+    builder.add_node('llm', llm_node)
+    builder.add_node('tools', tools_node)
+    builder.add_edge(START, 'llm')
+    builder.add_edge('tools', 'llm')
+    builder.add_conditional_edges('llm', router, {'tools': 'tools', 'end': END})
+
+    graph = builder.compile()
+    ```
+
+    Here's a simplified visual of the agent's flow:
+
+  <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/bf509c78-72aa-42f6-acee-21a9d70c6243" />
+
+**The Impact: A Smarter Inbox**
+
+This project demonstrates the power of agentic AI in a practical, everyday scenario. Instead of being reactive to a constant flood of emails, you can now proactively query your inbox, getting exactly the information you need, when you need it. This not only saves time but also reduces cognitive load, allowing you to focus on more important tasks.
+
+**Future Possibilities**
+
+This is just the beginning! This agent could be extended to:
+
+*   **Prioritize emails:** Identify and highlight messages from key contacts or about specific topics.
+*   **Draft replies:** Generate preliminary responses based on the email content.
+*   **Handle actions:** Archive, flag, or move emails based on your instructions.
+*   **Integrate with other tools:** Connect with calendars or task managers to create events or to-dos directly from emails.
+
+Building this agent has been an incredibly rewarding experience, showcasing how a blend of local LLMs, robust frameworks like LangChain/LangGraph, and simple tools can create a powerful and truly helpful AI assistant. The future of email management is here, and it's intelligent, efficient, and user-centric!
+
+---
