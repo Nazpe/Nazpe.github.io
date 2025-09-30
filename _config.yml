@@ -22,11 +22,10 @@ author: Nuno Pedrosa
 navbar-links:
   Home: "https://nazpe.github.io/"
   Publication: "https://nazpe.github.io/2025-09-07-publication/"
-  Test: "https://nazpe.github.io/2025-08-11-future-of-ai/"
   Projects: "projects"
-  More:
-    - Surprise 1: "https://beautifuljekyll.com"
-    - Surprise 2: "https://www.markdowntutorial.com/"
+#  More:
+#    - Surprise 1: "https://beautifuljekyll.com"
+#    - Surprise 2: "https://www.markdowntutorial.com/"
 
 ################
 # --- Logo --- #
