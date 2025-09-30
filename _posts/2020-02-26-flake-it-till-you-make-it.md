@@ -176,7 +176,14 @@ This is where the "intelligence" comes in.
 
     Here's a simplified visual of the agent's flow:
 
-  <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/bf509c78-72aa-42f6-acee-21a9d70c6243" />
+<img width="901" height="382" alt="Captura de ecrã 2025-09-29 153632" src="https://github.com/user-attachments/assets/5c0bef95-1ce1-4d25-a102-fa8be522d88f" />
+
+<img width="1488" height="370" alt="Captura de ecrã 2025-09-29 170220" src="https://github.com/user-attachments/assets/78481c50-3f61-437a-9c82-58eaf1cbc9f7" />
+
+<img width="1487" height="821" alt="Captura de ecrã 2025-09-29 175537" src="https://github.com/user-attachments/assets/1dc6c0e4-977c-4e0f-906a-b618b7604e18" />
+
+<img width="1492" height="862" alt="Captura de ecrã 2025-09-29 175721" src="https://github.com/user-attachments/assets/7e6f3461-d63e-4260-918d-164308a8a11b" />
+
 
 **The Impact: A Smarter Inbox**
 
