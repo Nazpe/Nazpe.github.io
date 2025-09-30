@@ -174,17 +174,25 @@ This is where the "intelligence" comes in.
     graph = builder.compile()
     ```
 
-    Here's a simplified visual of the agent's flow:
+Here's a simplified visual of the agent's flow:
 
 ![Extraction Pipeline](https://github.com/user-attachments/assets/5c0bef95-1ce1-4d25-a102-fa8be522d88f){: .mx-auto.d-block :}
 
+**Fig. 1.** Graph of the proposed agent, with R being the router. 
 
+Here are some examples of the agent's outputs:
 
 ![Extraction Pipeline](https://github.com/user-attachments/assets/78481c50-3f61-437a-9c82-58eaf1cbc9f7){: .mx-auto.d-block :}
 
+**Fig. 2.** In this example, the email settings were misconfigured, and as a result, the model indicated that it wouldn't be able to use the tools.
+
 ![Extraction Pipeline](https://github.com/user-attachments/assets/1dc6c0e4-977c-4e0f-906a-b618b7604e18){: .mx-auto.d-block :}
 
+**Fig. 3.** Graph of the proposed agent, with R being the router. 
+
 ![Extraction Pipeline](https://github.com/user-attachments/assets/7e6f3461-d63e-4260-918d-164308a8a11b){: .mx-auto.d-block :}
+
+**Fig. 4.** Graph of the proposed agent, with R being the router. 
 
 **The Impact: A Smarter Inbox**
 
