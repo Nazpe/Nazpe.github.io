@@ -178,6 +178,8 @@ This is where the "intelligence" comes in.
 
 ![Extraction Pipeline](https://github.com/user-attachments/assets/5c0bef95-1ce1-4d25-a102-fa8be522d88f){: .mx-auto.d-block :}
 
+
+
 ![Extraction Pipeline](https://github.com/user-attachments/assets/78481c50-3f61-437a-9c82-58eaf1cbc9f7){: .mx-auto.d-block :}
 
 ![Extraction Pipeline](https://github.com/user-attachments/assets/1dc6c0e4-977c-4e0f-906a-b618b7604e18){: .mx-auto.d-block :}
