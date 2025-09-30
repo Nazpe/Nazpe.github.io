@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: Building a Local Agentic AI system
+subtitle: With langgraph and ollama
+gh-repo: nazpe/Thesis
+gh-badge: [star, follow]
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [books, test]
-author: Sharon Smith and Barry Simpson
+comments: true
+mathjax: true
+tags: [text]
+author: Nuno Pedrosa
 ---
 
-## Taming the Inbox: My Journey with Agentic AI for Email Management
+## Building a Agentic AI for Email Management
 
 In an age where our inboxes often feel like digital black holes, overflowing with unread messages and urgent requests, the idea of an intelligent assistant to cut through the noise is incredibly appealing. That's exactly the problem I set out to solve with my latest project: an agentic AI tool designed to analyze and condense information from your email account.
 
@@ -19,7 +23,7 @@ We've all been there. Hundreds, if not thousands, of unread emails. Important up
 
 **Introducing the Email AI Agent**
 
-My solution is an AI agent built using `langchain` and `langgraph`, powered by a local Large Language Model (LLM). This agent isn't just a simple filter; it's an intelligent system capable of:
+My solution is an AI agent built using `langchain` and `langgraph`, powered by a local Large Language Model (LLM). This agent it's an intelligent system capable of:
 
 1.  **Listing Unread Emails:** It can quickly scan your inbox and provide a concise list of unread messages, including their sender, subject, and date.
 2.  **Summarizing Email Content:** The real power lies here. Given an email's unique ID, the agent can generate a short, plain-text summary of its content, allowing you to grasp the essence of a message without opening it.
@@ -176,7 +180,7 @@ This is where the "intelligence" comes in.
 
 **The Impact: A Smarter Inbox**
 
-This project demonstrates the power of agentic AI in a practical, everyday scenario. Instead of being reactive to a constant flood of emails, you can now proactively query your inbox, getting exactly the information you need, when you need it. This not only saves time but also reduces cognitive load, allowing you to focus on more important tasks.
+This project demonstrates the power of agentic AI in a practical, everyday scenario. Instead of being reactive to a constant flood of emails, you can proactively query your inbox, getting the information you need when you need it.
 
 **Future Possibilities**
 
@@ -187,6 +191,3 @@ This is just the beginning! This agent could be extended to:
 *   **Handle actions:** Archive, flag, or move emails based on your instructions.
 *   **Integrate with other tools:** Connect with calendars or task managers to create events or to-dos directly from emails.
 
-Building this agent has been an incredibly rewarding experience, showcasing how a blend of local LLMs, robust frameworks like LangChain/LangGraph, and simple tools can create a powerful and truly helpful AI assistant. The future of email management is here, and it's intelligent, efficient, and user-centric!
-
----
