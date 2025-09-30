@@ -188,11 +188,11 @@ Here are some examples of the agent's outputs:
 
 ![Extraction Pipeline](https://github.com/user-attachments/assets/1dc6c0e4-977c-4e0f-906a-b618b7604e18){: .mx-auto.d-block :}
 
-**Fig. 3.** Graph of the proposed agent, with R being the router. 
+**Fig. 3.** In this example, the prompt was: "Give me a very small summary of the themes of the unread emails." The model began by reasoning through the request.
 
 ![Extraction Pipeline](https://github.com/user-attachments/assets/7e6f3461-d63e-4260-918d-164308a8a11b){: .mx-auto.d-block :}
 
-**Fig. 4.** Graph of the proposed agent, with R being the router. 
+**Fig. 4.** Response to the question in **Fig. 3.**. 
 
 **The Impact: A Smarter Inbox**
 
