@@ -5,7 +5,6 @@ subtitle: With langgraph and ollama
 gh-repo: nazpe/Mail-Local-Agentic-AI
 gh-badge: [star, follow]
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 comments: true
 mathjax: true
