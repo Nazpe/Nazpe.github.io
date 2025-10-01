@@ -3,7 +3,6 @@ layout: post
 title: Building a Movie Recommender System with Collaborative Filtering
 subtitle: Using Apache Spark (Pyspark)
 cover-img: "https://github.com/user-attachments/assets/19772eb8-be24-4f49-9ff8-eb2925349732"
-thumbnail-img: "https://github.com/user-attachments/assets/6acb1830-2047-45ea-a035-96a4a27e0efd"
 share-img: "https://github.com/user-attachments/assets/19772eb8-be24-4f49-9ff8-eb2925349732"
 gh-repo: nazpe/Collaborative-Filtering-Recommender-Systems
 gh-badge: [star, follow]
