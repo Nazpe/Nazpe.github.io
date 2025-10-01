@@ -10,7 +10,7 @@ tags: [text]
 author: Nuno Pedrosa
 ---
 
-## Building a Agentic AI for streamlined Email Management
+## Building a Agentic AI for streamlined email management
 
 In an age where our inboxes often feel like digital black holes, overflowing with unread messages and urgent requests, the idea of an intelligent assistant to cut through the noise is incredibly appealing. That's exactly the problem I set out to solve with my latest project: an agentic AI tool designed to analyze and condense information from your email account.
 
