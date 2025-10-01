@@ -4,7 +4,6 @@ title: Mortality Prediction in ICU Patients with Pneumonia
 subtitle: A small overview of what I discovered
 gh-repo: nazpe/Thesis
 gh-badge: [star, follow]
-tags: [LR]
 comments: true
 mathjax: true
 author: Nuno Pedrosa
