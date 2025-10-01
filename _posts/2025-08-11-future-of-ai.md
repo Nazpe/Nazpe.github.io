@@ -7,7 +7,6 @@ thumbnail-img: "https://github.com/user-attachments/assets/670c3608-54b5-44b4-95
 share-img: /assets/img/path.jpg
 comments: true
 mathjax: true
-tags: [text]
 author: Nuno Pedrosa
 ---
 
