@@ -6,7 +6,6 @@ gh-repo: nazpe/Mail-Local-Agentic-AI
 gh-badge: [star, follow]
 comments: true
 mathjax: true
-tags: [text]
 author: Nuno Pedrosa
 ---
 
